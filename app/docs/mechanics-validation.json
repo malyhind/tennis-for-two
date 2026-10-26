@@ -1,0 +1,102 @@
+{
+  "release": "0.8.1",
+  "dateUTC": "2026-10-25T18:06:20.484Z",
+  "scope": "Planck controller dynamics and input semantics; numerical checks of the declared proxy, not measurements of the lost controls.",
+  "tests": [
+    {
+      "name": "Default mechanics has inertia; ordinary target commands cannot teleport a shaft",
+      "passed": true
+    },
+    {
+      "name": "Releasing a rotating shaft dissipates kinetic energy and comes to rest",
+      "passed": true
+    },
+    {
+      "name": "Historical torque range and button spring sensitivity preserve limits and actuation",
+      "passed": true
+    },
+    {
+      "name": "Home and End load the physical stops; reversal takes up finite coupling play",
+      "passed": true
+    },
+    {
+      "name": "Press, hold and release yield one close edge and one return edge",
+      "passed": true
+    },
+    {
+      "name": "A short tap completes one stroke; retriggering while down does not autofire",
+      "passed": true
+    },
+    {
+      "name": "Disabling mechanics preserves angle, cancels a pending press and restores direct input",
+      "passed": true
+    },
+    {
+      "name": "Fixed integration is independent of presentation frame chunks",
+      "passed": true
+    },
+    {
+      "name": "Halving the step bounds angular trace differences and contact timing",
+      "passed": true
+    },
+    {
+      "name": "Four-body controller cost fits a small fraction of a 60 Hz frame on this host",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "sensitivity": [
+      {
+        "frictionScale": 1,
+        "springScale": 0.5,
+        "close_ms": 5
+      },
+      {
+        "frictionScale": 1,
+        "springScale": 1,
+        "close_ms": 6
+      },
+      {
+        "frictionScale": 1,
+        "springScale": 1.5,
+        "close_ms": 6
+      },
+      {
+        "frictionScale": 1.25,
+        "springScale": 0.5,
+        "close_ms": 5
+      },
+      {
+        "frictionScale": 1.25,
+        "springScale": 1,
+        "close_ms": 6
+      },
+      {
+        "frictionScale": 1.25,
+        "springScale": 1.5,
+        "close_ms": 6
+      }
+    ],
+    "refinement": {
+      "maxAngleDifference_deg": 0.7771659303876755,
+      "closure_ms": [
+        6,
+        6
+      ],
+      "step_s": [
+        0.0005,
+        0.00025
+      ]
+    },
+    "performance": {
+      "host": "Linux/Node; not M1 or browser FPS",
+      "mechanisms": 2,
+      "dynamicBodies": 4,
+      "simulated_s": 20,
+      "wall_ms": 354.58688199999995,
+      "equivalent60HzFrame_ms": 0.29548906833333327
+    }
+  },
+  "passed": 10,
+  "failed": 0
+}

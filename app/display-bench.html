@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<meta name="description" content="Стенд электронной коммутации Tennis for Two: 15 германиевых транзисторов, SPICE, осциллограммы и X–Y-сигнал.">
+<title>Tennis for Two · стенд электронного переключателя</title>
+<link rel="stylesheet" href="./display-bench.css"><link rel="icon" type="image/svg+xml" href="./icons/tennis.svg"><link rel="icon" type="image/png" sizes="32x32" href="./icons/tennis-32.png"><link rel="apple-touch-icon" href="./icons/tennis-180.png"></head>
+<body><header><a class="brand" href="./docs/research.html" data-back>ЛАБОРАТОРИЯ ШКОЛЫ ИМПЕРИИ</a><span>ИССЛЕДОВАТЕЛЬСКИЙ СТЕНД / 002</span></header>
+<main><div class="intro"><p class="eyebrow">BNL · EH1-900-2-3 A · 18 ноября 1959</p><h1>Три изображения.<br>Один луч.</h1>
+<p class="lead">Мяч, сетка и корт попеременно подключаются к осциллографу. Здесь переключает сам транзисторный узел: ngspice рассчитывает его напряжения и переходные процессы.</p><p id="frame-note" class="lead" hidden></p></div>
+<section class="controls" aria-labelledby="setup-title"><h2 id="setup-title">Входы и модель</h2><div class="fields">
+<label>Сигналы вычислителя<select id="input-mode"><option value="markers">Три неподвижных маркера</option><option value="sweeps">Тестовые развёртки сетки и корта</option><option value="snapshot" hidden>Кадр игрового вычислителя</option></select></label>
+<label>Параметр усиления BF<select id="beta"><option value="50">50 · проверка чувствительности</option><option value="75" selected>75 · исходная модель</option><option value="100">100 · проверка чувствительности</option></select></label>
+<label>Температура<select id="temperature"><option value="10">10 °C</option><option value="25" selected>25 °C</option><option value="40">40 °C</option></select></label>
+<label>Расчёт<select id="accuracy"><option value="bounded" selected>Ограниченный · 0,12 s</option><option value="reference">Опорный · 0,24 s</option></select></label>
+</div><div class="actions"><button type="button" id="run">Рассчитать схему</button><button type="button" id="cancel" hidden>Остановить</button><span id="status" role="status" aria-live="polite">Расчёт запускается по кнопке. Сигналы появятся после переходного анализа.</span></div></section>
+<section class="instrument" aria-label="Результаты расчёта"><div class="plate"><span>ELECTRONIC SWITCH / NGSPICE WASM</span><span>15 PNP · 6 КЛЮЧЕЙ · 3 КАНАЛА</span></div>
+<div class="charts"><figure><canvas id="xy" width="960" height="640" aria-label="X–Y-сигнал на входе осциллографа" aria-describedby="xy-caption"></canvas><figcaption id="xy-caption">Напряжения на общих выходах X/Y. Цвет обозначает выбранный канал.</figcaption></figure>
+<figure><canvas id="phases" width="960" height="640" aria-label="Осциллограммы трёх каналов управления" aria-describedby="phase-caption"></canvas><figcaption id="phase-caption">Управляющие напряжения A/B/C. Низкий уровень выбирает соответствующую пару ключей.</figcaption></figure></div>
+<div class="legend"><span class="a">A · МЯЧ</span><span class="b">B · СЕТКА</span><span class="c">C · КОРТ</span></div>
+<dl id="metrics" aria-live="polite"><div><dt>Полный цикл модели</dt><dd data-repeat>—</dd></div><div><dt>Исторический ориентир</dt><dd>36 Hz</dd></div><div><dt>Доля A / B / C</dt><dd data-duty>—</dd></div><div><dt>Время вычисления</dt><dd data-wall>—</dd></div></dl>
+<p id="comparison">Частота получится из номиналов и модели деталей. Целевой генератор 36 Hz в схему не добавлен.</p>
+<div class="exports"><button type="button" id="csv" disabled>Измерения · CSV</button><button type="button" id="deck" disabled>Полный стенд · SPICE</button><a href="./display-switch.cir" download>Транзисторный узел · SPICE</a><a href="./docs/display-validation.json">Отчёт проверок</a></div></section>
+<section class="notes"><h2>Что здесь восстановлено</h2><p>Астабильный мультивибратор, дифференцирующая цепь, бистабильный делитель, драйверы и шесть аналоговых ключей перенесены с архивного листа. Все 15 транзисторов рассчитываются как нелинейные PNP-приборы. Переключения возникают в схеме.</p>
+<p>Питание задано отдельными источниками +12, +6, −6 и −22 V. Шесть входов — тестовые напряжения; развёртки 60 Hz выбраны для испытания ключей. Нагрузка осциллографа — принятые для стенда 1 MΩ ∥ 30 pF.</p>
+<p>Ограниченный режим сохраняет ту же транзисторную схему: окно 0,12 s, максимальный шаг 50 µs, относительный допуск 10⁻⁴. Опорный режим: 0,24 s, шаг до 20 µs, допуск 10⁻⁶. В коротком расчёте доступны BF 50–100 и температура 10–40 °C. Погрешности частоты, фронтов и установившихся X/Y проверены отдельно в отчёте.</p>
+<h2>Точность и следующие шаги</h2><p>RCA SC-11 указывает типичный малосигнальный коэффициент 75 для 2N140 в одной рабочей точке. Остальные параметры германиевой SPICE-модели пока приближённые. Частота и искажения передачи зависят от них. Это работающая транскрипция узла с предварительными моделями деталей.</p>
+<p>Трансформатор, выпрямитель, генераторы входных развёрток и физика ЭЛТ остаются за границей стенда. Из игры можно передать зафиксированные выходы U7/U2: этот кадр проходит через шесть транзисторных ключей вместе с тестовыми развёртками сетки и корта. В игре вычислитель, переключатель, пассивное питание и электрическая макромодель осциллографа уже работают в одном переходном анализе.</p>
+<p><a href="./docs/display-model.json">Параметры и основания модели</a> · <a href="./docs/research.html#schematics">Соединения, допущения и границы</a> · <a href="./docs/figures/bnl-schematic-2.jpg">Архивный лист крупно</a></p></section>
+</main><footer><span>ДМИТРИЙ МАЛЫХИН / ГРЕМЛИН · РАЗРАБОТКА ПРИ УЧАСТИИ CHATGPT</span><a href="./docs/research.html" data-back>История проекта →</a></footer>
+<noscript>Для расчёта нужны JavaScript и WebAssembly. Схему и описание можно открыть по ссылкам выше.</noscript>
+<script type="module" src="./display-bench.js"></script></body></html>

@@ -1,0 +1,51 @@
+{
+  "profile": "0.3.0",
+  "browser": "Chrome cloud, real WASM Worker",
+  "checks": {
+    "full_instrument_loads": true,
+    "left_serve_and_right_service_after_end": true,
+    "keyboard_knob_65_to_66": true,
+    "pointer_knob_65_to_98": true,
+    "pause_finishes_at_most_one_20ms_chunk": true,
+    "engineering_voltages_and_coil_currents_update": true,
+    "fullscreen_or_viewport_expansion": true,
+    "404_iframe_absent_before_START": true,
+    "404_START_loads_compact_game": true,
+    "404_close_removes_iframe": true,
+    "404_reopen_creates_new_frame": true,
+    "viewport_390": {
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    "CSV_export_standalone": {
+      "rows": 180,
+      "columns": 21,
+      "sample_Hz": 50,
+      "finite": true
+    },
+    "JSON_export_standalone": true,
+    "CSV_export_embedded": {
+      "rows": 19,
+      "columns": 21,
+      "sample_Hz": 50,
+      "finite": true
+    },
+    "JSON_export_embedded": true,
+    "same_origin_download_owner": "top document, temporary hidden anchor, Blob revoked after 10s"
+  },
+  "limits": [
+    "Viewport width was tested in a 390 px iframe, not on a physical phone.",
+    "Audible timbre and a historical oscilloscope were not instrumentally measured.",
+    "No public site deployment or full catalog scheduled job was run."
+  ],
+  "runtime_hashes": {
+    "analog-tennis.js": "dcf190b8d2645bb5423e533e1edadd034f0b459093c91cfbb3b585dd29d6feb5",
+    "engine.js": "161eb46f9f6913cd61b8003d3b3bb1c530c9e08729c425dfd93555c72e21edb4",
+    "spice-worker.js": "87f605c37f9a8132a69e6ea0d3425aa6b8a4182cde408073d9af93fc9922191d",
+    "circuit.js": "7b07f3708f8ac3ef1d16154d0204fd431f6e7a38c952deafbc557eac90430d55",
+    "spice-session.js": "324cbf9905c976b7e99357ac0ada996b662d43c2b5014af96fbb039f86699e38",
+    "tennis.cir": "bb3085b7bb71c014cf1296c5a5baac8f53dd442a7d46be5afdd99d944438eff6",
+    "vendor/spice.js": "c2a4a5e1e23eb8418249ad17717a3203541cd543b428226eb897bd00a4f6a68a",
+    "vendor/spice.wasm": "ed7995425b6f7af02db874539d13ea10d07759d5f2be6b79969343459ae886e4"
+  }
+}

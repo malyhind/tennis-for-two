@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="680" viewBox="0 0 760 680" role="img" aria-labelledby="title desc">
+<title id="title">Как схема превращает поворот ручки в полёт мяча</title>
+<desc id="desc">Пульты меняют входные источники. В ngspice зарядные банки и переключаемые цепи формируют скорость, интеграторы U7 и U2 дают координаты. Контакты замыкают электрическую обратную связь от детекторов. Worker передаёт измерения экрану и CSV.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#47643e" /></marker></defs>
+<rect width="760" height="680" rx="12" fill="#ececdf" />
+<g font-family="system-ui, sans-serif" fill="#293a28">
+<text x="32" y="35" font-size="13" letter-spacing="1.5">ЛАБОРАТОРИЯ ШКОЛЫ ИМПЕРИИ / ПРОФИЛЬ 0.8.0</text>
+<rect x="32" y="57" width="696" height="85" rx="8" fill="#fffdf3" stroke="#9ca98d" />
+<text x="54" y="88" font-size="20">Два пульта</text><text x="54" y="116" font-size="16">Ручки → напряжения · кнопки → импульсы источников</text>
+<path d="M380 145V182" stroke="#47643e" stroke-width="2" marker-end="url(#arrow)" />
+<rect x="32" y="185" width="696" height="290" rx="8" fill="#dde5d0" stroke="#829773" />
+<text x="54" y="215" font-size="20">ngspice / WebAssembly / Worker</text><text x="54" y="242" font-size="14">Единая электрическая модель tennis.cir</text>
+<rect x="54" y="262" width="290" height="110" rx="6" fill="#fffdf3" stroke="#9ca98d" />
+<text x="70" y="293" font-size="17">Заряд и скорость</text><text x="70" y="320" font-size="15">4 банка по 1 µF → U1 / U6</text><text x="70" y="346" font-size="14">Земля 10 µF · сетка 5 µF</text>
+<path d="M350 315H402" stroke="#47643e" stroke-width="2" marker-end="url(#arrow)" />
+<rect x="410" y="262" width="296" height="110" rx="6" fill="#fffdf3" stroke="#9ca98d" />
+<text x="426" y="293" font-size="17">Координаты</text><text x="426" y="320" font-size="15">U7 → X · U2 → Y</text><text x="426" y="346" font-size="14">Интеграторы 1 MΩ / 1 µF</text>
+<path d="M558 377V398H199V378" fill="none" stroke="#47643e" stroke-width="2" marker-end="url(#arrow)" />
+<text x="70" y="429" font-size="15">Детекторы → R–L-катушки → контакты → цепи отскока</text>
+<text x="70" y="454" font-size="13">Часть управления и характеристики приборов — макромодели.</text>
+<path d="M380 478V516" stroke="#47643e" stroke-width="2" marker-end="url(#arrow)" />
+<rect x="32" y="520" width="696" height="117" rx="8" fill="#fffdf3" stroke="#9ca98d" />
+<text x="54" y="551" font-size="20">Измерения → изображение и CSV</text>
+<text x="54" y="580" font-size="16">200 выборок/с · напряжения и токи · последние 6000 отсчётов</text>
+<text x="54" y="608" font-size="14">Луч и люминофор показывают электрическую трассу; щелчки синтезированы.</text>
+<text x="32" y="662" font-size="12" fill="#5f7152">Наша поясняющая схема. Не архивный чертёж и не ламповая схема Donner.</text>
+</g></svg>

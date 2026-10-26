@@ -1,0 +1,5 @@
+*.pdf binary
+# Preserve captured research decks/logs verbatim, including simulator formatting.
+research/electronics-2026-10-25/results/** -whitespace
+tests/results/** -whitespace
+app/docs/history/** -whitespace

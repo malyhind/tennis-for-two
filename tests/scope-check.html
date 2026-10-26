@@ -1,0 +1,7 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Проверка экранного тракта</title>
+<style>body{font:15px/1.6 system-ui;background:#e9e6da;color:#292c25;max-width:1050px;margin:30px auto;padding:15px}button{padding:12px;margin:8px}canvas{width:320px;height:320px;border:1px solid #79816c}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f8f6ee;padding:16px}section{display:flex;gap:20px;flex-wrap:wrap}</style>
+<h1>Экран по электрической трассе</h1><button id="run">Проверить CPU и WebGL</button><p id="status">Готово к проверке</p>
+<section><div><h2>WebGL</h2><canvas id="gpu"></canvas></div><div><h2>CPU</h2><canvas id="cpu" width="192" height="192"></canvas></div></section>
+<h2>Проверка потери контекста</h2><div id="fallback"><canvas width="512" height="512"></canvas></div>
+<details><summary>Полные результаты</summary><pre id="json"></pre></details>
+<script type="module" src="./scope-check.js"></script></html>

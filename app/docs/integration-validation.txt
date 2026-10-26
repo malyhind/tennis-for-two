@@ -1,0 +1,21 @@
+test_404_loads_no_game_iframe_before_click_and_has_absolute_resource_paths (lab_checks.Laboratory.test_404_loads_no_game_iframe_before_click_and_has_absolute_resource_paths) ... ok
+test_about_link_and_footer_are_generated_without_rewriting_source_markdown (lab_checks.Laboratory.test_about_link_and_footer_are_generated_without_rewriting_source_markdown) ... ok
+test_build_is_repeatable_and_does_not_touch_unchanged_files (lab_checks.Laboratory.test_build_is_repeatable_and_does_not_touch_unchanged_files) ... ok
+test_directory_canonical_changes_only_laboratory_index_paths (lab_checks.Laboratory.test_directory_canonical_changes_only_laboratory_index_paths) ... ok
+test_empty_collection_keeps_a_valid_404_link (lab_checks.Laboratory.test_empty_collection_keeps_a_valid_404_link) ... ok
+test_featured_game_is_selected_by_data (lab_checks.Laboratory.test_featured_game_is_selected_by_data) ... ok
+test_fixed_posters_do_not_participate_in_catalog_theme_conversion (lab_checks.Laboratory.test_fixed_posters_do_not_participate_in_catalog_theme_conversion) ... ok
+test_laboratory_pages_do_not_import_catalogue_navigation_or_theme (lab_checks.Laboratory.test_laboratory_pages_do_not_import_catalogue_navigation_or_theme) ... ok
+test_legacy_address_resolves_to_the_full_instrument (lab_checks.Laboratory.test_legacy_address_resolves_to_the_full_instrument) ... ok
+test_missing_poster_fails_before_mutating_output (lab_checks.Laboratory.test_missing_poster_fails_before_mutating_output) ... ok
+test_og_is_static_complete_and_images_match_declared_dimensions (lab_checks.Laboratory.test_og_is_static_complete_and_images_match_declared_dimensions) ... ok
+test_original_and_reconstruction_have_separate_authors_dates_and_ids (lab_checks.Laboratory.test_original_and_reconstruction_have_separate_authors_dates_and_ids) ... ok
+test_removed_game_only_removes_its_owned_pages (lab_checks.Laboratory.test_removed_game_only_removes_its_owned_pages) ... ok
+test_second_game_needs_only_a_folder_and_existing_pages_stay_identical (lab_checks.Laboratory.test_second_game_needs_only_a_folder_and_existing_pages_stay_identical) ... ok
+test_text_is_escaped_in_html_and_jsonld (lab_checks.Laboratory.test_text_is_escaped_in_html_and_jsonld) ... ok
+test_traversal_and_symlinks_are_rejected (lab_checks.Laboratory.test_traversal_and_symlinks_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.563s
+
+OK

@@ -1,0 +1,49 @@
+{
+  "release": "0.4.1",
+  "date": "2026-10-24",
+  "scope": "Keyboard input only. No CPU player implemented in this release.",
+  "fixes": [
+    "A/D reach the game handler after a slider receives focus; native slider arrows remain local.",
+    "Physical KeyA/KeyD/KeyW/KeyP commands support non-Latin layouts.",
+    "Composition, Ctrl/Alt/Meta and editable inputs are preserved."
+  ],
+  "browser_observed": [
+    "Focused left dial: D 65->66, A 66->65; --rotation at 66 = 43.2 degrees.",
+    "Home=0, End=100, eight PageUp presses=80.",
+    "ArrowRight from canvas changes right dial 65->66.",
+    "W accepted while the left dial is focused; hit becomes queued/unavailable.",
+    "P shows paused badge and Continue button.",
+    "Screenshot shows both dial positions, 80/66."
+  ],
+  "layout_check": {
+    "method": "Execute the exact extracted keyboard callback in Node.js VM with Cyrillic event.key plus physical event.code; assert control, strike, repeat, input, modifier and pause behavior.",
+    "passed": true,
+    "actual_browser_OS_layout_switch_tested": false
+  },
+  "numerical_reports": {
+    "retested": false,
+    "source_hashes_unchanged": {
+      "validation.json": {
+        "app/tennis.cir": true,
+        "app/circuit.js": true,
+        "app/spice-session.js": true,
+        "app/vendor/spice.wasm": true
+      },
+      "display-validation.json": {
+        "app/display-switch.cir": true,
+        "app/display-circuit.js": true,
+        "app/spice-session.js": true,
+        "app/vendor/spice.wasm": true
+      }
+    }
+  },
+  "publisher_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "public_deployment": false,
+  "hashes": {
+    "app/analog-tennis.js": "af70ca92c75cfd294b283700c039d3bd94f304d8ad05793f5c7bc6a444faa228",
+    "game.json": "d49cd67fe9da724eae973cc8617ea909a5cdddba2298577b06f7f7a49467d643"
+  }
+}

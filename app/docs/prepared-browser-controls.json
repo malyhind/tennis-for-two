@@ -1,0 +1,10 @@
+{
+  "scope": "Rendered browser control smoke test; keyboard sliders, serve, mode changes, CPU rally and pause observed. Sound output, M1 and FPS not measured.",
+  "checks": {
+    "left_knob_keyboard": true,
+    "serve_and_next_serve": true,
+    "together_mode_right_knob_keyboard": true,
+    "watch_cpu_knobs_move_and_rally": true,
+    "pause_visible": true
+  }
+}

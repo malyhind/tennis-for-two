@@ -1,0 +1,73 @@
+{
+  "release": "0.6.0",
+  "dateUTC": "2026-10-24",
+  "browser": "Chrome155 / Linux cloud",
+  "scope": "Visual and interactive checks through managed local preview; iframe widths below are CSS viewport tests, not physical touchscreen tests.",
+  "checks": [
+    {
+      "name": "Desktop instrument: circular screen and two round knobs; no text inside glass",
+      "passed": true
+    },
+    {
+      "name": "Mode together enables both knobs; ArrowRight/ArrowLeft change66/64 with corresponding CSS rotation",
+      "passed": true
+    },
+    {
+      "name": "D after dial focus changes65->66 and W starts an actual rally",
+      "passed": true,
+      "observedPhase": "РОЗЫГРЫШ",
+      "observedClock_s": 7.67
+    },
+    {
+      "name": "Pause button freezes clock across observations; status is outside screen",
+      "passed": true,
+      "observedClock_s": 7.72
+    },
+    {
+      "name": "Watch mode disables manual dials and CPU starts rally; left knob moves to51",
+      "passed": true,
+      "observedClock_s": 9.16
+    },
+    {
+      "name": "Laboratory detail and research typography, tables, figures and download controls reviewed",
+      "passed": true
+    },
+    {
+      "name": "390px lab/detail viewport does not overflow",
+      "passed": true,
+      "clientWidth": 375,
+      "scrollWidth": 375
+    },
+    {
+      "name": "390px research viewport does not overflow",
+      "passed": true,
+      "clientWidth": 375,
+      "scrollWidth": 375
+    },
+    {
+      "name": "Nested full-game viewport does not overflow and bridge loads instrument",
+      "passed": true,
+      "clientWidth": 353,
+      "scrollWidth": 353
+    },
+    {
+      "name": "Real r9 404 launcher creates iframe only after START; compact instrument loads without overflow",
+      "passed": true,
+      "clientWidth": 325,
+      "scrollWidth": 325,
+      "glassText": ""
+    },
+    {
+      "name": "Close removes the live compact iframe and restores collapsed START",
+      "passed": true,
+      "remainingFrames": 0
+    }
+  ],
+  "limitations": [
+    "WebGL2 unavailable: numerical GPU parity and real context loss untested.",
+    "M1/Firefox performance and physical touch hardware unmeasured.",
+    "404 wrapper is an explicit integration fixture around the real r9 launcher, not a full catalogue screenshot.",
+    "Early 404 fixture referenced an unpublished old asset hash and displayed a wide error string. Fixture generation was moved after publication; no game CSS change was needed.",
+    "Browser download completion not exercised; file delivery checked separately."
+  ]
+}

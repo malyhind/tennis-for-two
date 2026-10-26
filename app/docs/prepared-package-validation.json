@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "six_model_and_control_sources_unchanged": true,
+    "json_parses": true,
+    "portable_html_links_resolve": true,
+    "factory_wasm_source_patch_hashes_match": true,
+    "r9_0_2_2_manifest_schema": true,
+    "r9_immutable_asset_hash_deterministic": true,
+    "r9_game_wasm_asset_included": true,
+    "r9_og_jpeg_1200x630": true,
+    "r9_jsonld_generation": true
+  },
+  "passed": true,
+  "scope": "Actual r9/0.2.2 module used for manifest validation, game asset enumeration/hash, poster format and JSON-LD generation in an isolated fixture. The bridge bytes are a test fixture. Full catalogue publication and gremlin_ui_hints integration were not run.",
+  "shared_laboratory_files_changed": false
+}

@@ -1,0 +1,26 @@
+{
+  "project": "m1el/woscope",
+  "url": "https://github.com/m1el/woscope",
+  "commit": "74af1e3f3c1ff9e0da8e82bf01b5b2dd52f3da5d",
+  "license": "MIT",
+  "copyright": "2015 Igor Null, Chad von Nau",
+  "use": "Analytic moving Gaussian beam integral and beam quad construction; adapted in ../../beam-model.js and ../../phosphor-webgl.js; CPU parity in ../../phosphor-cpu.js. Audio, recording, analyser and UI are not used.",
+  "changes": [
+    "Area-normalized beam energy",
+    "Actual nonuniform SPICE time and beam current",
+    "Physical electrostatic deflection calibration",
+    "Two declared time constants and linear HDR accumulation",
+    "GLSL ES 3 instanced segment quads",
+    "Same algorithm on CPU",
+    "No UI or raster overlays on tube"
+  ],
+  "files": {
+    "LICENSE": "cdab580ed54d5910348f0aa0603cbce3750903b43a512e38ed8d111519ea6b87",
+    "index.js": "09899539368fda93dad40058a93a039f7ef44579f73c924d577afb876f2e25bc",
+    "shaders/vsLine.glsl": "6697bc2dff86271854f119825bd32019c53af3556c0a4969dc59d1dd9b05103f",
+    "shaders/fsLine.glsl": "bffa7e136768b824c95ccff256588d9cf2a140291b6fb210f339df53228cbc5a",
+    "shaders/vsOutput.glsl": "cce722faeecb1f3e2b0ca1cdd97257d9ddaa054adf0f076137990d49647724b8",
+    "shaders/fsOutput.glsl": "0979a3c951a8a3178164c0590625d1b695b9ce37bdd4d55b793953a714c45bc9",
+    "shaders/fsBlurTranspose.glsl": "b12a1f8f80b723e5a05bbc3e8c1efd1b2247d735d1f8a5500cb0ea3fb8bf1596"
+  }
+}

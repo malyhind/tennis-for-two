@@ -1,0 +1,29 @@
+{
+  "name": "tennis-for-two-reconstruction",
+  "version": "0.8.4",
+  "private": true,
+  "type": "module",
+  "description": "A declared Tennis for Two circuit reconstruction evaluated by ngspice in a browser worker",
+  "scripts": {
+    "test": "node tests/verify.mjs",
+    "test:display": "node tests/verify-display.mjs",
+    "benchmark:display": "node tests/benchmark-display.mjs",
+    "test:cpu": "node tests/verify-cpu.mjs",
+    "test:joint": "node tests/verify-joint.mjs",
+    "test:worker": "node tests/verify-worker.mjs",
+    "test:continuity": "node tests/verify-continuity.mjs",
+    "test:joint-native": "node tests/verify-joint-native.mjs",
+    "test:joint-warm": "node tests/verify-joint-warm.mjs",
+    "test:mechanics": "node tests/verify-mechanics.mjs",
+    "test:mechanics-joint": "node tests/verify-mechanics-joint.mjs",
+    "test:restart-inputs": "node tests/verify-restart-inputs.mjs",
+    "test:controller-worker": "node tests/verify-controller-worker.mjs",
+    "test:glass": "node tests/verify-glass.mjs",
+    "test:transactional-worker": "node tests/verify-transactional-worker.mjs",
+    "test:demo": "node tests/verify-demo.mjs",
+    "record:demo": "node tools/record-demo.mjs",
+    "docs": "python3 tools/build_research.py",
+    "test:documents": "python3 tests/verify-documents.py"
+  },
+  "license": "MIT"
+}

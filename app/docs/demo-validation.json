@@ -1,0 +1,38 @@
+{
+  "release": "0.8.4",
+  "dateUTC": "2026-10-25T18:06:22.934Z",
+  "scope": "Lossless production recording, absolute-clock replay, loops, pause, path discontinuity and CPU cost. Native M1 and hardware WebGL are separate.",
+  "tests": [
+    {
+      "name": "Binary64 shuffle roundtrip preserves every source bit",
+      "passed": true
+    },
+    {
+      "name": "Wall-clock tempo is exactly 1x at 30, 60, 144 Hz and irregular delivery",
+      "passed": true
+    },
+    {
+      "name": "Pause and reset do not catch up hidden time",
+      "passed": true
+    },
+    {
+      "name": "Loop timestamps remain monotone and path breaks delimit each wrap",
+      "passed": true
+    },
+    {
+      "name": "Wrap breaks the beam path while retaining phosphor and simulated time",
+      "passed": true
+    },
+    {
+      "name": "Recorded trace hashes and model compatibility",
+      "skipped": true,
+      "reason": "Optional recording is absent. Run node tools/record-demo.mjs, then repeat this test."
+    },
+    {
+      "name": "Recorded trace CPU budget",
+      "skipped": true,
+      "reason": "Optional recording is absent. Run node tools/record-demo.mjs, then repeat this test."
+    }
+  ],
+  "metrics": {}
+}

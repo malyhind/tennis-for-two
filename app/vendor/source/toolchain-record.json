@@ -1,0 +1,92 @@
+{
+  "repository": "https://snapshot.ubuntu.com/ubuntu/20260828T000000Z/",
+  "InRelease_SHA256": "cdb2f31d809f589719a53c6ad15f255b27569c4059542ada282aaa21b8e164b0",
+  "signature": "Verified with Ubuntu Archive Automatic Signing Key (2018), F6ECB3762474EDA9D21B7022871920D1991BC93C",
+  "packages": {
+    "binaryen": {
+      "Version": "108-1",
+      "Filename": "pool/universe/b/binaryen/binaryen_108-1_amd64.deb",
+      "SHA256": "ef81caebd1cc28028cc5a3054cdebf500c3c1c6243438d224dd8c1614ff90644",
+      "Size": "3390376"
+    },
+    "clang-15": {
+      "Version": "1:15.0.7-14build3",
+      "Filename": "pool/universe/l/llvm-toolchain-15/clang-15_15.0.7-14build3_amd64.deb",
+      "SHA256": "d7c0987187f9c3d782019c25b46fd93917daade274ca1b3cadf4dcc464daf1da",
+      "Size": "81034"
+    },
+    "emscripten": {
+      "Version": "3.1.6~dfsg-7",
+      "Filename": "pool/universe/e/emscripten/emscripten_3.1.6~dfsg-7_all.deb",
+      "SHA256": "b3583e5659616bdd3dceac5cd6835fb63374a0dc661d7788c0e2bd7bff25656e",
+      "Size": "93235030"
+    },
+    "libclang-common-15-dev": {
+      "Version": "1:15.0.7-14build3",
+      "Filename": "pool/universe/l/llvm-toolchain-15/libclang-common-15-dev_15.0.7-14build3_amd64.deb",
+      "SHA256": "59184ebbb1945cfd07fd839accf2723fa032879de4fab900a87c5e49ae20cfe0",
+      "Size": "623436"
+    },
+    "libclang-cpp15t64": {
+      "Version": "1:15.0.7-14build3",
+      "Filename": "pool/universe/l/llvm-toolchain-15/libclang-cpp15t64_15.0.7-14build3_amd64.deb",
+      "SHA256": "f8d97bedcaefa5db1bf4b7ee2fb30fabc27b9cabd80c0fc3cd56811829023aaa",
+      "Size": "12621286"
+    },
+    "libclang1-15t64": {
+      "Version": "1:15.0.7-14build3",
+      "Filename": "pool/universe/l/llvm-toolchain-15/libclang1-15t64_15.0.7-14build3_amd64.deb",
+      "SHA256": "77c7bffa46b33e4530657a0e783adaa5532859dc59779088c4eca801e66366f3",
+      "Size": "6957756"
+    },
+    "libllvm15t64": {
+      "Version": "1:15.0.7-14build3",
+      "Filename": "pool/universe/l/llvm-toolchain-15/libllvm15t64_15.0.7-14build3_amd64.deb",
+      "SHA256": "a486f3bdd974133edb049b5f3396f9e75cf7894b9e91008407bec9885a2f33d9",
+      "Size": "25497846"
+    },
+    "libpfm4": {
+      "Version": "4.13.0+git32-g0d4ed0e-1",
+      "Filename": "pool/universe/libp/libpfm4/libpfm4_4.13.0+git32-g0d4ed0e-1_amd64.deb",
+      "SHA256": "037cdd0aad754b70df1df39aae34a9f857daa78fdfa132673b476c256e33ad52",
+      "Size": "413816"
+    },
+    "lld-15": {
+      "Version": "1:15.0.7-14build3",
+      "Filename": "pool/universe/l/llvm-toolchain-15/lld-15_15.0.7-14build3_amd64.deb",
+      "SHA256": "963d3efb34d32d08161a9e0cd2f1d279464bbf130f6093cc5be295e73798527e",
+      "Size": "1329598"
+    },
+    "llvm-15": {
+      "Version": "1:15.0.7-14build3",
+      "Filename": "pool/universe/l/llvm-toolchain-15/llvm-15_15.0.7-14build3_amd64.deb",
+      "SHA256": "0e5a8a1fc3cf9b21a0b262d39d53dd411c72e5df400a54787cde53210591bf70",
+      "Size": "13365094"
+    },
+    "llvm-15-linker-tools": {
+      "Version": "1:15.0.7-14build3",
+      "Filename": "pool/universe/l/llvm-toolchain-15/llvm-15-linker-tools_15.0.7-14build3_amd64.deb",
+      "SHA256": "4b4ad65e9ea481c4ddd679a42d3deddcf98db66951d0b9f0155e4aa373403491",
+      "Size": "1373274"
+    },
+    "llvm-15-runtime": {
+      "Version": "1:15.0.7-14build3",
+      "Filename": "pool/universe/l/llvm-toolchain-15/llvm-15-runtime_15.0.7-14build3_amd64.deb",
+      "SHA256": "b2caf977d98a3bd2586325d5b1ddccf4d40d6b29ab651f20ee2e18ae7b443d98",
+      "Size": "506222"
+    },
+    "llvm-15-tools": {
+      "Version": "1:15.0.7-14build3",
+      "Filename": "pool/universe/l/llvm-toolchain-15/llvm-15-tools_15.0.7-14build3_amd64.deb",
+      "SHA256": "58d5ac8752a9c03d42e3de31399666dcaca04156d86cad5394ccfbec38af43f9",
+      "Size": "432630"
+    },
+    "node-acorn": {
+      "Version": "8.8.1+ds+~cs25.17.7-2",
+      "Filename": "pool/universe/a/acorn/node-acorn_8.8.1+ds+~cs25.17.7-2_all.deb",
+      "SHA256": "ffb73a7c78ba03220cd5e6ccdbc764321947a19cad403d0083a913ed54db2d85",
+      "Size": "115084"
+    }
+  },
+  "note": "Toolchain package binaries are build dependencies, not included in the game. Rebuild byte-for-byte reproducibility is not claimed; build date and source paths can differ."
+}

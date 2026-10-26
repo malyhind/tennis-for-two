@@ -1,0 +1,29 @@
+{
+  "release": "0.4.0",
+  "date": "2026-10-24",
+  "scope": "Separate display-switch workbench; live ball/game coupling is not implemented.",
+  "browser": "Chrome cloud browser; static managed preview",
+  "observed": [
+    "No transient starts on initial page load; export buttons are disabled until a result.",
+    "Bounded markers: 6000 samples / 0.12 s, repeat 39.09 Hz.",
+    "Same dedicated worker switched bounded -> reference -> bounded: reference 12000 samples / 0.24 s, repeat 39.09 Hz; bounded rerun completed.",
+    "Test sweeps and BF=50, 40 C completed: repeat 39.23 Hz, zero simultaneous selection reported; XY and phase canvases visually inspected.",
+    "Reference analysis cancelled with visible stopped status; subsequent bounded calculation completed.",
+    "390 px iframe: bounded calculation completed; document clientWidth=375, scrollWidth=375 including scrollbar."
+  ],
+  "physical_phone_tested": false,
+  "download": {
+    "native_download_event_observed": false,
+    "reason": "Cloud-browser download-event capture timed out after clicking the generated SPICE export. No successful browser file completion is claimed.",
+    "standalone_export_checked": "The same generated export helper produced a .control-enabled deck; native ngspice 45.2 exited 0 and wrote 6001 finite rows including time zero, ending at 0.12 s."
+  },
+  "public_deployment": false,
+  "hashes": {
+    "app/display-bench.html": "04ba0b7f97b60d9415bed485e8c2296ce8c59cbc32d9202ed45ce9e507dffafa",
+    "app/display-bench.css": "31eecfa31eb0c180b79120c49b69fa55d6a23ceb8613ca99bfe164d5248d6ba4",
+    "app/display-bench.js": "efee76bdde021cc9e56c87b9136299561aa2240b3ba533745c7900dab4353239",
+    "app/display-worker.js": "f3f94df6b305177e80bbba9c90b79e7211ead6aa474108ff5dc6cd0303284c25",
+    "app/display-circuit.js": "a72bebb178f129929e6a2f7a01432d3e547982a5af0e7df0d2ea9c2a0969d491",
+    "app/display-switch.cir": "31f7e1f1d434ca5ff13d35c25e2e05afd1afac552bdec21f3a2146fda1fed23d"
+  }
+}

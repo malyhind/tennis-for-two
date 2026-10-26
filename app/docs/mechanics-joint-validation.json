@@ -1,0 +1,31 @@
+{
+  "release": "0.8.1",
+  "dateUTC": "2026-10-25T09:53:09.703Z",
+  "scope": "New controller output/contact bridge into the unchanged production joined SPICE circuit. Fixed-time offline scenario, not human-subject or browser-speed validation.",
+  "tests": [
+    {
+      "name": "Mechanical controllers sustain real joined-circuit play",
+      "passed": true,
+      "simulated_s": 5.004820369057867,
+      "contactClosures": 3,
+      "contactsBySide": [
+        2,
+        1
+      ],
+      "acceptedHitEvents": 3,
+      "checkpoints": 10
+    },
+    {
+      "name": "Direct controllers sustain real joined-circuit play",
+      "passed": true,
+      "simulated_s": 5.004845687037723,
+      "contactClosures": 3,
+      "contactsBySide": [
+        2,
+        1
+      ],
+      "acceptedHitEvents": 3,
+      "checkpoints": 10
+    }
+  ]
+}

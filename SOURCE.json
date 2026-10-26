@@ -1,0 +1,24 @@
+{
+  "version": "0.8.4",
+  "edition": "standalone-source",
+  "revision": 1,
+  "derivedFrom": "a88bfc8359a76bd22bed7391f91cbd20fc70bf81",
+  "physicalModelSHA256": {
+    "joint-circuit.js": "6946fac642249518bf03ec02124ee031dc0eafa81786f104f564c58967008b0b",
+    "engine.js": "2d908c3a7e84f16d540a968d233a3c5f265c5f7f51b9bd84b1e228279c00f2c2",
+    "spice-worker.js": "c889ef09f81201ada8197731080f8b19dc42a81d7cd9931441323274d6e3997c",
+    "tennis.cir": "36d638a1e66753349af966cb8d0143134d4569da160dca7db1a314d2164b8f49",
+    "display-switch.cir": "31f7e1f1d434ca5ff13d35c25e2e05afd1afac552bdec21f3a2146fda1fed23d",
+    "scope.cir": "2117edccdf48f8754ccaf521a48cf28d11761733a4df17111b7072ba6e406d9d",
+    "vendor/spice.wasm": "7e92084ce97153e5288919cfcd64a2255dad37a7e5d9abf2d1350f09df667a5c",
+    "controller-mechanics.js": "ce69c02fe8e88be2fa726eda79d6dc86ae17243b3e55cb20f401007017d43ce1",
+    "cpu-player.js": "5aae7de62d7a3a7406f7f003fb209b1026e313de7e01a84adefe024d12f702df"
+  },
+  "adaptations": [
+    "Own entry point and local language preference; no catalogue or parent-frame protocol.",
+    "Optional recording is generated with the included recorder; absent recording mode is hidden.",
+    "Current research and dependency notices retained; publication infrastructure and prior releases omitted.",
+    "Visible reflected room light; plane-parallel optics equations retained.",
+    "Low closing returns and phase-matched serve boundary for the optional recorder."
+  ]
+}

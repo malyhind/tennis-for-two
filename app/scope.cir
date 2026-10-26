@@ -1,0 +1,31 @@
+* Oscilloscope terminal/deflection MACROMODEL, not a tube-by-tube DuMont.
+* DuMont Oscillographer 14(1), 1953, pp.13,19-20: X input 2.2Mohm||50pF,
+* Y input 2Mohm||50pF; 5ADP deflection factors at Eb2=1.6kV:
+* X 48V/in, Y 36.8V/in. These are nominal instrument-family values.
+* Gain, position, pole implementation, clamp and grid setting are OUR calibration.
+* Two equal 300kHz RC poles give |H(100kHz)|=.9, |H(300kHz)|=.5.
+* Tube/gun supplies are ideal. No power transformer, heater or tube ageing model.
+.subckt TFT_SCOPE in_x in_y plate_x plate_y beam_i
+RinputX in_x 0 2.2meg
+RinputY in_y 0 2meg
+CinputX in_x 0 50p
+CinputY in_y 0 50p
+BtargetX target_x 0 V=min(max(54*(V(in_x)+.11665),-110),110)
+BtargetY target_y 0 V=min(max(44*(V(in_y)+.11665)-30,-110),110)
+RpoleX1 target_x pole_x 1k
+CpoleX1 pole_x 0 530.5164769729845p
+EbufferX buffer_x 0 pole_x 0 1
+RpoleX2 buffer_x plate_x 1k
+CpoleX2 plate_x 0 530.5164769729845p
+RpoleY1 target_y pole_y 1k
+CpoleY1 pole_y 0 530.5164769729845p
+EbufferY buffer_y 0 pole_y 0 1
+RpoleY2 buffer_y plate_y 1k
+CpoleY2 plate_y 0 530.5164769729845p
+* Grid-current law is a declared 3/2-power gun surrogate, not a fitted 5ADP1.
+Vgrid grid 0 -15
+Vaccel anode 0 1600
+Bgun anode 0 I=25u*(max(0,1+V(grid)/48)/.6875)^1.5
+* Current is exposed as a voltage-valued telemetry port (1 V = 1 A).
+Bcurrent beam_i 0 V=-I(Vaccel)
+.ends TFT_SCOPE
