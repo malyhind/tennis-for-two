@@ -3,7 +3,6 @@ __pycache__/
 node_modules/
 tests/results/*
 !tests/results/.gitkeep
-app/demo/*.gz
 app/demo/progress.json
 app/docs/PROJECT.md
 app/docs/PROJECT.en.md
