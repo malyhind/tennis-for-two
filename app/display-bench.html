@@ -4,7 +4,7 @@
 <meta name="description" content="Стенд электронной коммутации Tennis for Two: 15 германиевых транзисторов, SPICE, осциллограммы и X–Y-сигнал.">
 <title>Tennis for Two · стенд электронного переключателя</title>
 <link rel="stylesheet" href="./display-bench.css"><link rel="icon" type="image/svg+xml" href="./icons/tennis.svg"><link rel="icon" type="image/png" sizes="32x32" href="./icons/tennis-32.png"><link rel="apple-touch-icon" href="./icons/tennis-180.png"></head>
-<body><header><a class="brand" href="./docs/research.html" data-back>ЛАБОРАТОРИЯ ШКОЛЫ ИМПЕРИИ</a><span>ИССЛЕДОВАТЕЛЬСКИЙ СТЕНД / 002</span></header>
+<body><header><a class="brand" data-laboratory href="https://games.oopssre.ru/lab/">ЛАБОРАТОРИЯ ШКОЛЫ ИМПЕРИИ</a><span>ИССЛЕДОВАТЕЛЬСКИЙ СТЕНД / 002</span></header>
 <main><div class="intro"><p class="eyebrow">BNL · EH1-900-2-3 A · 18 ноября 1959</p><h1>Три изображения.<br>Один луч.</h1>
 <p class="lead">Мяч, сетка и корт попеременно подключаются к осциллографу. Здесь переключает сам транзисторный узел: ngspice рассчитывает его напряжения и переходные процессы.</p><p id="frame-note" class="lead" hidden></p></div>
 <section class="controls" aria-labelledby="setup-title"><h2 id="setup-title">Входы и модель</h2><div class="fields">
@@ -26,6 +26,6 @@
 <h2>Точность и следующие шаги</h2><p>RCA SC-11 указывает типичный малосигнальный коэффициент 75 для 2N140 в одной рабочей точке. Остальные параметры германиевой SPICE-модели пока приближённые. Частота и искажения передачи зависят от них. Это работающая транскрипция узла с предварительными моделями деталей.</p>
 <p>Трансформатор, выпрямитель, генераторы входных развёрток и физика ЭЛТ остаются за границей стенда. Из игры можно передать зафиксированные выходы U7/U2: этот кадр проходит через шесть транзисторных ключей вместе с тестовыми развёртками сетки и корта. В игре вычислитель, переключатель, пассивное питание и электрическая макромодель осциллографа уже работают в одном переходном анализе.</p>
 <p><a href="./docs/display-model.json">Параметры и основания модели</a> · <a href="./docs/research.html#schematics">Соединения, допущения и границы</a> · <a href="./docs/figures/bnl-schematic-2.jpg">Архивный лист крупно</a></p></section>
-</main><footer><span>ДМИТРИЙ МАЛЫХИН / ГРЕМЛИН · РАЗРАБОТКА ПРИ УЧАСТИИ CHATGPT</span><a href="./docs/research.html" data-back>История проекта →</a></footer>
+</main><footer><span>ДМИТРИЙ МАЛЫХИН / ГРЕМЛИН · РАЗРАБОТКА ПРИ УЧАСТИИ CHATGPT</span><a href="./docs/research.html" data-back>История проекта →</a><a href="https://games.oopssre.ru/">Аркадный зал Школы Империи</a></footer>
 <noscript>Для расчёта нужны JavaScript и WebAssembly. Схему и описание можно открыть по ссылкам выше.</noscript>
-<script type="module" src="./display-bench.js"></script></body></html>
+<script type="module" src="./display-bench.js"></script><script type="module" src="../checks/publication-links.js"></script></body></html>

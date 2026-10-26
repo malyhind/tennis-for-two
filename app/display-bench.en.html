@@ -4,7 +4,7 @@
 <meta name="description" content="Tennis for Two electronic switch bench:15 germanium transistors,SPICE,time traces and X–Y output.">
 <title>Tennis for Two · electronic switch bench</title>
 <link rel="stylesheet" href="./display-bench.css"><link rel="icon" type="image/svg+xml" href="./icons/tennis.svg"><link rel="icon" type="image/png" sizes="32x32" href="./icons/tennis-32.png"><link rel="apple-touch-icon" href="./icons/tennis-180.png"></head>
-<body><header><a class="brand" href="./docs/research.en.html" data-back>IMPERIAL SCHOOL LABORATORY</a><span>RESEARCH BENCH / 002</span></header>
+<body><header><a class="brand" data-laboratory href="https://games.oopssre.ru/en/lab/">IMPERIAL SCHOOL LABORATORY</a><span>RESEARCH BENCH / 002</span></header>
 <main><div class="intro"><p class="eyebrow">BNL · EH1-900-2-3 A · 18 November 1959</p><h1>Three images.<br>One beam.</h1>
 <p class="lead">Ball, net and court connect to the oscilloscope in turn. The transistor network performs the switching; ngspice evaluates its voltages and transients.</p><p id="frame-note" class="lead" hidden></p></div>
 <section class="controls" aria-labelledby="setup-title"><h2 id="setup-title">Inputs and model</h2><div class="fields">
@@ -26,6 +26,6 @@
 <h2>Accuracy and model choices</h2><p>RCA SC-11 gives typical small-signal gain 75 for 2N140 at one operating point. Remaining Ge SPICE parameters are preliminary and affect frequency and transfer distortion. This is a working network transcription with declared device models.</p>
 <p>Transformer, rectifier, sweep-source internals and CRT physics are outside this standalone bench. The game can pass frozen U7/U2 outputs through the six transistor keys with the net/court test sweeps. In the playable instrument, computer, switch, passive supply and scope macromodel already share one transient analysis.</p>
 <p><a href="./docs/display-model.json">Model parameters and evidence</a> · <a href="./docs/research.en.html#schematics">Connections, assumptions and scope</a> · <a href="./docs/figures/bnl-schematic-2.jpg">Full-size archival drawing</a></p></section>
-</main><footer><span>DMITRY MALYKHIN / GREMLIN · DEVELOPED WITH CHATGPT</span><a href="./docs/research.en.html" data-back>Project history →</a></footer>
+</main><footer><span>DMITRY MALYKHIN / GREMLIN · DEVELOPED WITH CHATGPT</span><a href="./docs/research.en.html" data-back>Project history →</a><a href="https://games.oopssre.ru/">Imperial School Arcade</a></footer>
 <noscript>JavaScript and WebAssembly are required for calculation. The circuit and documentation are available through the links above.</noscript>
-<script type="module" src="./display-bench.js"></script></body></html>
+<script type="module" src="./display-bench.js"></script><script type="module" src="../checks/publication-links.js"></script></body></html>

@@ -1,5 +1,15 @@
-// Link the Pages copy back to its repository without hard-coding an owner.
-try{
+// Keep project navigation in the selected language; source links also work
+// when ready files are published directly from a GitHub branch.
+const updateLaboratoryLinks=()=>{
+ const prefix=document.documentElement.lang==='en'?'en/':'';
+ for(const link of document.querySelectorAll('[data-laboratory]'))
+  link.href=`https://games.oopssre.ru/${prefix}lab/`;
+};
+updateLaboratoryLinks();
+window.addEventListener('tennis-language',updateLaboratoryLinks);
+
+// Retain optional publication metadata for exports with no explicit source URL.
+if(document.querySelector('[data-repository]:not([href])'))try{
  const response=await fetch(new URL('../publication.json',import.meta.url));
  if(response.ok){
   const info=await response.json();
