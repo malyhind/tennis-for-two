@@ -40,7 +40,7 @@ def main():
     paths = sorted(p for p in ROOT.rglob('*') if included(p))
     rows = [{'path': p.relative_to(ROOT).as_posix(), 'bytes': len(b),
              'sha256': hashlib.sha256(b).hexdigest()} for p in paths for b in [payload(p)]]
-    manifest = {'release': VERSION, 'edition': 'standalone-source', 'revision': 5,
+    manifest = {'release': VERSION, 'edition': 'standalone-source', 'revision': 6,
                 'optionalRecordingIncluded': False, 'files': rows}
     prefix = 'tennis-for-two/'
     with tempfile.NamedTemporaryFile(dir=args.output.parent, suffix='.zip', delete=False) as handle:

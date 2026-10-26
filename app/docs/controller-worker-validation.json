@@ -1,0 +1,17 @@
+{
+  "release": "0.8.3",
+  "dateUTC": "2026-10-25T13:40:18.286Z",
+  "scope": "Production WorkerEngine/spice-worker, mechanical controls, CPU rallies and low-angle human/reset sequence with actual heap transfers. Offline fixed-time input, not measured browser performance.",
+  "tests": [
+    {
+      "name": "Thirty-second production transfer and controller sequence",
+      "passed": true,
+      "simulated_s": 30.003893791829338,
+      "hits": 12,
+      "workerRestarts": 60,
+      "maxRestartRetries": 0,
+      "manualServe": true,
+      "peakHeapBytes": 125435904
+    }
+  ]
+}

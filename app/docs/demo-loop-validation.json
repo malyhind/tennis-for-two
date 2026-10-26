@@ -1,0 +1,23 @@
+{
+  "recordingRevision": 5,
+  "duration_s": 15.16667425838705,
+  "hits": 10,
+  "lastFlight": {
+    "time_s": 14.829332288740973,
+    "x_V": -75.38434073947299,
+    "height_V": -0.01850982124565448,
+    "vx": -84.439134164868,
+    "vy": -67.32510058653037
+  },
+  "forcedResetUsed": false,
+  "endpointBallDifference_V": [
+    -1.3081091765343444e-11,
+    5.207567710385774e-11
+  ],
+  "knobDifference": [
+    -1.1123503451671013e-8,
+    -1.1123503451671013e-8
+  ],
+  "spotShift_pixelsAt512": 0.5728559099308913,
+  "method": "Actual last/first150ms, live CPU128 optics; green spot centroid excludes floor/net; no fabricated or interpolated beam samples"
+}

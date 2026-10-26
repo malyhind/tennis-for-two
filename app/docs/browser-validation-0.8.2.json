@@ -1,0 +1,75 @@
+{
+  "release": "0.8.2",
+  "dateUTC": "2026-10-25T11:28:50.288259+00:00",
+  "environment": "Cloud Chrome 155, local Sites managed preview",
+  "publicDeployment": false,
+  "M1FirefoxMeasured": false,
+  "checks": [
+    {
+      "name": "New glass switch defaults on",
+      "passed": true,
+      "language": "ru"
+    },
+    {
+      "name": "Human serve and opponent return with optics enabled",
+      "passed": true,
+      "observedTime_s": 13.05,
+      "note": "Match reached next serve; right control moved to 65.5 percent."
+    },
+    {
+      "name": "Glass switch preserves paused circuit time and controller state",
+      "passed": true,
+      "time_s": 13.05,
+      "controlPercent": [
+        65,
+        65.5
+      ]
+    },
+    {
+      "name": "Language switching preserves glass mode and paused state",
+      "passed": true,
+      "sequence": [
+        "ru with glass on",
+        "glass off",
+        "en with glass off"
+      ],
+      "time_s": 13.05
+    },
+    {
+      "name": "Reload retains chosen glass-off mode",
+      "passed": true
+    },
+    {
+      "name": "Both CPU operators play with glass enabled",
+      "passed": true,
+      "observedTime_s": 5.32,
+      "phase": "RALLY",
+      "controlsPercent": [
+        62.9,
+        71.8
+      ]
+    },
+    {
+      "name": "Narrow layout contains additional glass switch",
+      "passed": true,
+      "clientWidth_px": 390,
+      "scrollWidth_px": 390
+    },
+    {
+      "name": "Published laboratory glass section uses common laboratory styling",
+      "passed": true,
+      "version": "0.8.2",
+      "visuallyReviewed": true,
+      "publisherVersion": "0.3.0"
+    }
+  ],
+  "browserBench": {
+    "report": "glass-browser-validation.json",
+    "passed": 3,
+    "skipped": 6,
+    "hardwareGPUChecked": false,
+    "reason": "WebGL2 unavailable"
+  },
+  "screenshot": "tennis-0.8.2-glass-1792927549636.jpg",
+  "screenshotVisuallyReviewed": true
+}

@@ -1,0 +1,783 @@
+{
+  "release": "0.5.2",
+  "engine": "45.2-tft-eval2",
+  "selected": "plan",
+  "selected_reason": "Prepared/O3 has a confirmed gain in both environments. LTO combination had a similar Node median and a slightly slower browser median. Selection does not establish a universal hardware ranking.",
+  "node": {
+    "date": "2026-10-24T16:59:06.536Z",
+    "scope": "Alternating isolated Node/WASM processes, same continuous .4s coupled serve, 69 signals at 1ms, 17 digits. Source/instantiate excluded, initial settling included. Not M1 or live-game FPS.",
+    "runs": [
+      {
+        "id": "current",
+        "repeat": 0,
+        "wall_s": 6.6067213,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "9ece9bf5d0b14523c167088e6907f52b4fff140a2563c992fe937735b54cb8f1",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "o3",
+        "repeat": 0,
+        "wall_s": 6.883956685,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "1a05ce48192cafa38dfcbe8c49e7644517dec68df9823c314132e3f19a095b5a",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "lto",
+        "repeat": 0,
+        "wall_s": 7.047810759,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "ac94cea61ee7c9b7717dd6c6e91548f549548b2640c7c1123652e71f84f4fc77",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "plan",
+        "repeat": 0,
+        "wall_s": 5.093197656999999,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "7e92084ce97153e5288919cfcd64a2255dad37a7e5d9abf2d1350f09df667a5c",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "combined",
+        "repeat": 0,
+        "wall_s": 5.357042971,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "89e7aed34da97a130a0fba7991e731d55b3189e3d539d4511a2ebc7f9622dd9d",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "current",
+        "repeat": 1,
+        "wall_s": 6.412376428000001,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "9ece9bf5d0b14523c167088e6907f52b4fff140a2563c992fe937735b54cb8f1",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "o3",
+        "repeat": 1,
+        "wall_s": 6.305991274,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "1a05ce48192cafa38dfcbe8c49e7644517dec68df9823c314132e3f19a095b5a",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "lto",
+        "repeat": 1,
+        "wall_s": 6.562810658,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "ac94cea61ee7c9b7717dd6c6e91548f549548b2640c7c1123652e71f84f4fc77",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "plan",
+        "repeat": 1,
+        "wall_s": 5.331693095,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "7e92084ce97153e5288919cfcd64a2255dad37a7e5d9abf2d1350f09df667a5c",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "combined",
+        "repeat": 1,
+        "wall_s": 5.221754161000001,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "89e7aed34da97a130a0fba7991e731d55b3189e3d539d4511a2ebc7f9622dd9d",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "current",
+        "repeat": 2,
+        "wall_s": 6.664874503,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "9ece9bf5d0b14523c167088e6907f52b4fff140a2563c992fe937735b54cb8f1",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "o3",
+        "repeat": 2,
+        "wall_s": 6.170169886,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "1a05ce48192cafa38dfcbe8c49e7644517dec68df9823c314132e3f19a095b5a",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "lto",
+        "repeat": 2,
+        "wall_s": 6.241794292000001,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "ac94cea61ee7c9b7717dd6c6e91548f549548b2640c7c1123652e71f84f4fc77",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "plan",
+        "repeat": 2,
+        "wall_s": 5.319079833999999,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "7e92084ce97153e5288919cfcd64a2255dad37a7e5d9abf2d1350f09df667a5c",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "combined",
+        "repeat": 2,
+        "wall_s": 5.578630668,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "columns": 69,
+        "wasm_sha256": "89e7aed34da97a130a0fba7991e731d55b3189e3d539d4511a2ebc7f9622dd9d",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "exact_17_digit_match": true
+      }
+    ]
+  },
+  "browser_isolated": {
+    "date": "2026-10-24T17:06:08.696Z",
+    "environment": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "scope": "Browser Worker, fresh terminated Worker per trial, three alternating repetitions per engine, same .4s PWL coupled serve, 69 signals at 1ms/17digits. Timed transient includes settling; instantiate/source excluded. Not M1 or live FPS.",
+    "runs": [
+      {
+        "id": "current",
+        "wall_s": 6.52810000000149,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 0
+      },
+      {
+        "id": "plan",
+        "wall_s": 5.499,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 0
+      },
+      {
+        "id": "o3",
+        "wall_s": 6.45710000000149,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 0
+      },
+      {
+        "id": "combined",
+        "wall_s": 5.68470000000298,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 0
+      },
+      {
+        "id": "lto",
+        "wall_s": 6.4306000000014905,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 0
+      },
+      {
+        "id": "lto",
+        "wall_s": 6.63,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 1
+      },
+      {
+        "id": "combined",
+        "wall_s": 5.75039999999851,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 1
+      },
+      {
+        "id": "o3",
+        "wall_s": 6.938,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 1
+      },
+      {
+        "id": "plan",
+        "wall_s": 5.44689999999851,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 1
+      },
+      {
+        "id": "current",
+        "wall_s": 6.538799999997019,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 1
+      },
+      {
+        "id": "current",
+        "wall_s": 6.214599999994039,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 2
+      },
+      {
+        "id": "lto",
+        "wall_s": 6.22460000000149,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 2
+      },
+      {
+        "id": "combined",
+        "wall_s": 5.717,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 2
+      },
+      {
+        "id": "o3",
+        "wall_s": 6.46460000000149,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 2
+      },
+      {
+        "id": "plan",
+        "wall_s": 5.84279999999702,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true,
+        "repeat": 2
+      }
+    ],
+    "visibility_hidden_count": 0,
+    "completed": true
+  },
+  "browser_initial": {
+    "date": "2026-10-24T17:01:37.980Z",
+    "environment": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "scope": "Browser Worker, single continuous .4s coupled PWL serve, 1ms observations, 17 digits; source/instantiate excluded, settling included. Not live FPS or M1.",
+    "runs": [
+      {
+        "id": "current",
+        "wall_s": 6.532199999995529,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "o3",
+        "wall_s": 11.40530000000447,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "lto",
+        "wall_s": 9.97010000000149,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "plan",
+        "wall_s": 9.5045,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true
+      },
+      {
+        "id": "combined",
+        "wall_s": 5.5945,
+        "simulated_s": 0.4,
+        "rows": 400,
+        "signals": 69,
+        "exact_17_digit_match": true
+      }
+    ],
+    "visibility_hidden_count": 0
+  },
+  "browser_capture_note": "JSON copied from the visible expanded page report after the download API failed. It is not the original downloaded file.",
+  "native_semantics": {
+    "cases": [
+      {
+        "id": "nonlinear-and-ternary",
+        "exact_17_digit_match": true,
+        "prepared_program_compilations": 3,
+        "sha256": "0e80768e3a268d9e0ec431023794ebea1916174c5def82b75effafe401240c35"
+      },
+      {
+        "id": "ddt-stateful-fallback",
+        "exact_17_digit_match": true,
+        "prepared_program_compilations": 0,
+        "sha256": "ea6ecda404436dc52994c4af2046798e79a47b26c186be6305dfa719b5328936"
+      },
+      {
+        "id": "gmin-1e-12",
+        "exact_17_digit_match": true,
+        "prepared_program_compilations": 1,
+        "sha256": "fdd3012a22406a3a61647083b249dbcd6f05300a820fa0e77b516452f4076cc1"
+      },
+      {
+        "id": "gmin-0.0001",
+        "exact_17_digit_match": true,
+        "prepared_program_compilations": 1,
+        "sha256": "3f5d7dcb54d85cd71b6c6657fdb6ba68339cc71f7ba3ed034af3e9eca5593b20"
+      },
+      {
+        "id": "ac-jacobian",
+        "exact_17_digit_match": true,
+        "prepared_program_compilations": 1,
+        "sha256": "67d8f220f65799e191e24f19c2df80923b819fc64427a40924757ab7236b4b44"
+      },
+      {
+        "id": "branch-domain-and-sharing",
+        "exact_17_digit_match": true,
+        "prepared_program_compilations": 2,
+        "sha256": "8ad420c1bf317bbdec116ffcddc2604da81e76a75ce6a7f5269bab7385602473"
+      },
+      {
+        "id": "pwl-time-and-temperature",
+        "exact_17_digit_match": true,
+        "prepared_program_compilations": 1,
+        "sha256": "f73ab9cf1c0f9529f1c53b1437e22f9552ceeb44d5291e047db87eecc56c84b3"
+      },
+      {
+        "id": "frequency-expression",
+        "exact_17_digit_match": true,
+        "prepared_program_compilations": 1,
+        "sha256": "a7392de295027c8d022fc6dca9fdfb4534898e24ba3afc59b8c0b747c8646529"
+      },
+      {
+        "id": "reset-reparse-lifetime",
+        "exact_17_digit_match": true,
+        "prepared_program_compilations": 21,
+        "sha256": "75df1e96bb3530894358cd541cefbf701cf53b1cae6086cc400a72e26d71b369"
+      }
+    ],
+    "scope": "Nine native integration cases; prepared programs observed in the instrumented candidate; same source equations and numerical settings."
+  },
+  "native_joint": {
+    "runs": [
+      {
+        "kind": "control",
+        "trace_sha256": "c74a8e01f9595fb8163dbe5f353a66332711716eaf6c9c978448f4a9a5252d2f",
+        "rows": 850,
+        "prepared_compilations": 0,
+        "exact_match": true
+      },
+      {
+        "kind": "plan",
+        "trace_sha256": "c74a8e01f9595fb8163dbe5f353a66332711716eaf6c9c978448f4a9a5252d2f",
+        "rows": 850,
+        "prepared_compilations": 94,
+        "exact_match": true
+      }
+    ],
+    "scope": "69 signals, .85s joint native serve, 17-digit output comparison. Timing intentionally excluded while other builds ran."
+  },
+  "wasm_semantics": {
+    "current": {
+      "cases": [
+        {
+          "id": "nonlinear-and-ternary",
+          "rows": 1511,
+          "sha256": "e8fa78d272a38aa1615affc0c8d6729bcf5dc89bfdf8b53091e7b7d0cff556ed",
+          "exact_match_to_current": null
+        },
+        {
+          "id": "ddt-stateful-fallback",
+          "rows": 1511,
+          "sha256": "16bc8458fc4dafc9f2706e0fdd4abde8b7ff5a03e05df391d60a49caa67baa50",
+          "exact_match_to_current": null
+        },
+        {
+          "id": "gmin-1e-12",
+          "rows": 1511,
+          "sha256": "272f4199b92caa48f371e9dedd5b89309cd1a6be94bbf4df2e8c493bdd0ada0e",
+          "exact_match_to_current": null
+        },
+        {
+          "id": "gmin-0.0001",
+          "rows": 1511,
+          "sha256": "2a3c39ac1783310111bb10aa4f34902347c19f316cee03804efb1badcfb51257",
+          "exact_match_to_current": null
+        },
+        {
+          "id": "ac-jacobian",
+          "rows": 51,
+          "sha256": "67d8f220f65799e191e24f19c2df80923b819fc64427a40924757ab7236b4b44",
+          "exact_match_to_current": null
+        },
+        {
+          "id": "branch-domain-and-sharing",
+          "rows": 1511,
+          "sha256": "48d89ca041692b53b723cecd6b75aaaa42a884ce487f5c37ed367ee4ccfa7913",
+          "exact_match_to_current": null
+        },
+        {
+          "id": "pwl-time-and-temperature",
+          "rows": 1511,
+          "sha256": "bee977f7b7af457f7a6247473b89f470a9a8e34e45731cc66821c8ed6ffbdc74",
+          "exact_match_to_current": null
+        },
+        {
+          "id": "frequency-expression",
+          "rows": 51,
+          "sha256": "a7392de295027c8d022fc6dca9fdfb4534898e24ba3afc59b8c0b747c8646529",
+          "exact_match_to_current": null
+        },
+        {
+          "id": "reset-reparse-lifetime",
+          "rows": 161,
+          "sha256": "53b0fb574504bb5417b0a574d5108fea33ccb0e2ce970d1aa7f98e6fef6abeb7",
+          "exact_match_to_current": null
+        }
+      ]
+    },
+    "o3": {
+      "cases": [
+        {
+          "id": "nonlinear-and-ternary",
+          "rows": 1511,
+          "sha256": "e8fa78d272a38aa1615affc0c8d6729bcf5dc89bfdf8b53091e7b7d0cff556ed",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "ddt-stateful-fallback",
+          "rows": 1511,
+          "sha256": "16bc8458fc4dafc9f2706e0fdd4abde8b7ff5a03e05df391d60a49caa67baa50",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "gmin-1e-12",
+          "rows": 1511,
+          "sha256": "272f4199b92caa48f371e9dedd5b89309cd1a6be94bbf4df2e8c493bdd0ada0e",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "gmin-0.0001",
+          "rows": 1511,
+          "sha256": "2a3c39ac1783310111bb10aa4f34902347c19f316cee03804efb1badcfb51257",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "ac-jacobian",
+          "rows": 51,
+          "sha256": "67d8f220f65799e191e24f19c2df80923b819fc64427a40924757ab7236b4b44",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "branch-domain-and-sharing",
+          "rows": 1511,
+          "sha256": "48d89ca041692b53b723cecd6b75aaaa42a884ce487f5c37ed367ee4ccfa7913",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "pwl-time-and-temperature",
+          "rows": 1511,
+          "sha256": "bee977f7b7af457f7a6247473b89f470a9a8e34e45731cc66821c8ed6ffbdc74",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "frequency-expression",
+          "rows": 51,
+          "sha256": "a7392de295027c8d022fc6dca9fdfb4534898e24ba3afc59b8c0b747c8646529",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "reset-reparse-lifetime",
+          "rows": 161,
+          "sha256": "53b0fb574504bb5417b0a574d5108fea33ccb0e2ce970d1aa7f98e6fef6abeb7",
+          "exact_match_to_current": true
+        }
+      ]
+    },
+    "lto": {
+      "cases": [
+        {
+          "id": "nonlinear-and-ternary",
+          "rows": 1511,
+          "sha256": "e8fa78d272a38aa1615affc0c8d6729bcf5dc89bfdf8b53091e7b7d0cff556ed",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "ddt-stateful-fallback",
+          "rows": 1511,
+          "sha256": "16bc8458fc4dafc9f2706e0fdd4abde8b7ff5a03e05df391d60a49caa67baa50",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "gmin-1e-12",
+          "rows": 1511,
+          "sha256": "272f4199b92caa48f371e9dedd5b89309cd1a6be94bbf4df2e8c493bdd0ada0e",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "gmin-0.0001",
+          "rows": 1511,
+          "sha256": "2a3c39ac1783310111bb10aa4f34902347c19f316cee03804efb1badcfb51257",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "ac-jacobian",
+          "rows": 51,
+          "sha256": "67d8f220f65799e191e24f19c2df80923b819fc64427a40924757ab7236b4b44",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "branch-domain-and-sharing",
+          "rows": 1511,
+          "sha256": "48d89ca041692b53b723cecd6b75aaaa42a884ce487f5c37ed367ee4ccfa7913",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "pwl-time-and-temperature",
+          "rows": 1511,
+          "sha256": "bee977f7b7af457f7a6247473b89f470a9a8e34e45731cc66821c8ed6ffbdc74",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "frequency-expression",
+          "rows": 51,
+          "sha256": "a7392de295027c8d022fc6dca9fdfb4534898e24ba3afc59b8c0b747c8646529",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "reset-reparse-lifetime",
+          "rows": 161,
+          "sha256": "53b0fb574504bb5417b0a574d5108fea33ccb0e2ce970d1aa7f98e6fef6abeb7",
+          "exact_match_to_current": true
+        }
+      ]
+    },
+    "plan": {
+      "cases": [
+        {
+          "id": "nonlinear-and-ternary",
+          "rows": 1511,
+          "sha256": "e8fa78d272a38aa1615affc0c8d6729bcf5dc89bfdf8b53091e7b7d0cff556ed",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "ddt-stateful-fallback",
+          "rows": 1511,
+          "sha256": "16bc8458fc4dafc9f2706e0fdd4abde8b7ff5a03e05df391d60a49caa67baa50",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "gmin-1e-12",
+          "rows": 1511,
+          "sha256": "272f4199b92caa48f371e9dedd5b89309cd1a6be94bbf4df2e8c493bdd0ada0e",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "gmin-0.0001",
+          "rows": 1511,
+          "sha256": "2a3c39ac1783310111bb10aa4f34902347c19f316cee03804efb1badcfb51257",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "ac-jacobian",
+          "rows": 51,
+          "sha256": "67d8f220f65799e191e24f19c2df80923b819fc64427a40924757ab7236b4b44",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "branch-domain-and-sharing",
+          "rows": 1511,
+          "sha256": "48d89ca041692b53b723cecd6b75aaaa42a884ce487f5c37ed367ee4ccfa7913",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "pwl-time-and-temperature",
+          "rows": 1511,
+          "sha256": "bee977f7b7af457f7a6247473b89f470a9a8e34e45731cc66821c8ed6ffbdc74",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "frequency-expression",
+          "rows": 51,
+          "sha256": "a7392de295027c8d022fc6dca9fdfb4534898e24ba3afc59b8c0b747c8646529",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "reset-reparse-lifetime",
+          "rows": 161,
+          "sha256": "53b0fb574504bb5417b0a574d5108fea33ccb0e2ce970d1aa7f98e6fef6abeb7",
+          "exact_match_to_current": true
+        }
+      ]
+    },
+    "combined": {
+      "cases": [
+        {
+          "id": "nonlinear-and-ternary",
+          "rows": 1511,
+          "sha256": "e8fa78d272a38aa1615affc0c8d6729bcf5dc89bfdf8b53091e7b7d0cff556ed",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "ddt-stateful-fallback",
+          "rows": 1511,
+          "sha256": "16bc8458fc4dafc9f2706e0fdd4abde8b7ff5a03e05df391d60a49caa67baa50",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "gmin-1e-12",
+          "rows": 1511,
+          "sha256": "272f4199b92caa48f371e9dedd5b89309cd1a6be94bbf4df2e8c493bdd0ada0e",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "gmin-0.0001",
+          "rows": 1511,
+          "sha256": "2a3c39ac1783310111bb10aa4f34902347c19f316cee03804efb1badcfb51257",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "ac-jacobian",
+          "rows": 51,
+          "sha256": "67d8f220f65799e191e24f19c2df80923b819fc64427a40924757ab7236b4b44",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "branch-domain-and-sharing",
+          "rows": 1511,
+          "sha256": "48d89ca041692b53b723cecd6b75aaaa42a884ce487f5c37ed367ee4ccfa7913",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "pwl-time-and-temperature",
+          "rows": 1511,
+          "sha256": "bee977f7b7af457f7a6247473b89f470a9a8e34e45731cc66821c8ed6ffbdc74",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "frequency-expression",
+          "rows": 51,
+          "sha256": "a7392de295027c8d022fc6dca9fdfb4534898e24ba3afc59b8c0b747c8646529",
+          "exact_match_to_current": true
+        },
+        {
+          "id": "reset-reparse-lifetime",
+          "rows": 161,
+          "sha256": "53b0fb574504bb5417b0a574d5108fea33ccb0e2ce970d1aa7f98e6fef6abeb7",
+          "exact_match_to_current": true
+        }
+      ]
+    }
+  },
+  "c_differential": {
+    "evaluations": 100401,
+    "random_graphs": 1000,
+    "log": "PASS 100401 bitwise differential evaluations; 1001 random/branch plans; ASan/UBSan and balanced allocations\n",
+    "sanitizers": [
+      "AddressSanitizer",
+      "UndefinedBehaviorSanitizer"
+    ],
+    "leak_sanitizer": "Unavailable: /proc task access failed. ASan rerun with detect_leaks=0; the isolated allocator balance was checked after each graph."
+  },
+  "game_checks": {
+    "validation": {
+      "passed": 15,
+      "skipped": 0
+    },
+    "display-validation": {
+      "passed": 9,
+      "skipped": 0
+    },
+    "cpu-validation": {
+      "passed": 8,
+      "skipped": 0
+    }
+  },
+  "helper": {
+    "scope": "The distributed optional helper prepared the six modified/bridge source files exactly as used by the selected manually incrementally rebuilt WASM. Its complete clean build was not repeated in this phase.",
+    "prepared_source_match": true,
+    "files": {
+      "src/include/ngspice/inpptree.h": "ebf9c20415c9d5edb8a156a6ce6d5dd768e4f977d3a1f591be947ef37efc348c",
+      "src/spicelib/parser/ifeval.c": "f8bbeea33f2b36fe274b404d7a58fb59cf1a3bb77c55e9cc3cd0c8a6509dddfd",
+      "src/spicelib/parser/inpptree.c": "aa8ef2674f58d4807cce5f5fae8a6d7f758e0a909c91791a01e3468f017c9fb5",
+      "src/spicelib/parser/tft_eval_plan.inc": "cefd91838b2967760e3a14f09098e4ddbc3983b38e68c3882f5bd268a96cb99e",
+      "src/frontend/control.c": "ab5595db0beacfcfa3d5b2d4925bc55279f5c7629f97f9f3d5089b40c57993f5",
+      "src/main.c": "1447d520f54b369bbe2865eb3c8dc58e141740da4f2f13e006020e67ffaea565"
+    }
+  },
+  "limits": [
+    "No M1/Firefox target measurement",
+    "No new live FPS measurement",
+    "Output observations do not compare every adaptive internal iterate",
+    "No full historical hardware calibration",
+    "No whole-ngspice sanitizer or upstream regression suite"
+  ]
+}

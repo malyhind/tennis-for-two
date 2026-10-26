@@ -1,0 +1,2123 @@
+{
+  "date": "2026-10-24",
+  "build": "45.2-tft-eval1",
+  "native": {
+    "date": "2026-10-24T13:19:52.324Z",
+    "scope": "Three alternating native runs, 0.85 s PWL serve, unchanged deck and numerical settings. 1 ms observations and 17-digit text; this does not compare every adaptive internal iterate or prove historical fidelity.",
+    "columns": [
+      "v(x)",
+      "v(y)",
+      "v(u1)",
+      "v(u6)",
+      "v(pre_lx)",
+      "v(pre_ly)",
+      "v(pre_rx)",
+      "v(pre_ry)",
+      "v(run)",
+      "v(run_contact)",
+      "v(can_l)",
+      "v(can_r)",
+      "v(server)",
+      "v(bank)",
+      "v(ground_contact)",
+      "v(net_contact)",
+      "v(centre_contact)",
+      "v(end_contact)",
+      "i(v.xground.vsense)",
+      "i(v.xnet.vsense)",
+      "i(v.xrun.vsense)",
+      "i(v.xlx.vsense)",
+      "i(v.xly.vsense)",
+      "i(v.xrx.vsense)",
+      "i(v.xry.vsense)",
+      "v(railp)",
+      "v(railm)",
+      "v(logic)",
+      "v(grav)",
+      "v(sy)",
+      "v(sx)",
+      "v(py)",
+      "v(px)",
+      "v(ga)",
+      "v(gb)",
+      "v(na)",
+      "v(nb)",
+      "v(edge_source)",
+      "v(edge)",
+      "v(button_l)",
+      "v(button_r)",
+      "v(reset)",
+      "v(permit_l)",
+      "v(permit_r)",
+      "v(xly.cp)",
+      "v(lyn)",
+      "v(xry.cp)",
+      "v(ryn)",
+      "v(xlx.cp)",
+      "v(lxn)",
+      "v(xrx.cp)",
+      "v(rxn)",
+      "v(xu1.pole)",
+      "v(xu2.pole)",
+      "v(xu3.pole)",
+      "v(xu4.pole)",
+      "v(xu6.pole)",
+      "v(xu7.pole)",
+      "v(hit_l_contact)",
+      "v(hit_r_contact)",
+      "i(v.xend.vsense)",
+      "i(v.xcentre.vsense)",
+      "i(v.xhitl.vsense)",
+      "i(v.xhitr.vsense)",
+      "v(screen_x)",
+      "v(screen_y)",
+      "v(phase_a)",
+      "v(phase_b)",
+      "v(phase_c)"
+    ],
+    "runs": [
+      {
+        "kind": "baseline",
+        "repeat": 0,
+        "wall_s": 13.90375635,
+        "rows": 850,
+        "columns": 69,
+        "trace_sha256": "c74a8e01f9595fb8163dbe5f353a66332711716eaf6c9c978448f4a9a5252d2f",
+        "max_difference": 0,
+        "differences": [
+          {
+            "name": "v(x)",
+            "max": 0
+          },
+          {
+            "name": "v(y)",
+            "max": 0
+          },
+          {
+            "name": "v(u1)",
+            "max": 0
+          },
+          {
+            "name": "v(u6)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_lx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ly)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_rx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ry)",
+            "max": 0
+          },
+          {
+            "name": "v(run)",
+            "max": 0
+          },
+          {
+            "name": "v(run_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(can_l)",
+            "max": 0
+          },
+          {
+            "name": "v(can_r)",
+            "max": 0
+          },
+          {
+            "name": "v(server)",
+            "max": 0
+          },
+          {
+            "name": "v(bank)",
+            "max": 0
+          },
+          {
+            "name": "v(ground_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(net_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(centre_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(end_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xground.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xnet.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrun.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xlx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xly.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xry.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(railp)",
+            "max": 0
+          },
+          {
+            "name": "v(railm)",
+            "max": 0
+          },
+          {
+            "name": "v(logic)",
+            "max": 0
+          },
+          {
+            "name": "v(grav)",
+            "max": 0
+          },
+          {
+            "name": "v(sy)",
+            "max": 0
+          },
+          {
+            "name": "v(sx)",
+            "max": 0
+          },
+          {
+            "name": "v(py)",
+            "max": 0
+          },
+          {
+            "name": "v(px)",
+            "max": 0
+          },
+          {
+            "name": "v(ga)",
+            "max": 0
+          },
+          {
+            "name": "v(gb)",
+            "max": 0
+          },
+          {
+            "name": "v(na)",
+            "max": 0
+          },
+          {
+            "name": "v(nb)",
+            "max": 0
+          },
+          {
+            "name": "v(edge_source)",
+            "max": 0
+          },
+          {
+            "name": "v(edge)",
+            "max": 0
+          },
+          {
+            "name": "v(button_l)",
+            "max": 0
+          },
+          {
+            "name": "v(button_r)",
+            "max": 0
+          },
+          {
+            "name": "v(reset)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_l)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_r)",
+            "max": 0
+          },
+          {
+            "name": "v(xly.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lyn)",
+            "max": 0
+          },
+          {
+            "name": "v(xry.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(ryn)",
+            "max": 0
+          },
+          {
+            "name": "v(xlx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xrx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(rxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xu1.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu2.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu3.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu4.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu6.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu7.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_l_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_r_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xend.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xcentre.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitl.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitr.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_x)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_y)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_a)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_b)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_c)",
+            "max": 0
+          }
+        ]
+      },
+      {
+        "kind": "candidate",
+        "repeat": 0,
+        "wall_s": 10.206162064,
+        "rows": 850,
+        "columns": 69,
+        "trace_sha256": "c74a8e01f9595fb8163dbe5f353a66332711716eaf6c9c978448f4a9a5252d2f",
+        "max_difference": 0,
+        "differences": [
+          {
+            "name": "v(x)",
+            "max": 0
+          },
+          {
+            "name": "v(y)",
+            "max": 0
+          },
+          {
+            "name": "v(u1)",
+            "max": 0
+          },
+          {
+            "name": "v(u6)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_lx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ly)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_rx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ry)",
+            "max": 0
+          },
+          {
+            "name": "v(run)",
+            "max": 0
+          },
+          {
+            "name": "v(run_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(can_l)",
+            "max": 0
+          },
+          {
+            "name": "v(can_r)",
+            "max": 0
+          },
+          {
+            "name": "v(server)",
+            "max": 0
+          },
+          {
+            "name": "v(bank)",
+            "max": 0
+          },
+          {
+            "name": "v(ground_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(net_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(centre_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(end_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xground.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xnet.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrun.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xlx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xly.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xry.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(railp)",
+            "max": 0
+          },
+          {
+            "name": "v(railm)",
+            "max": 0
+          },
+          {
+            "name": "v(logic)",
+            "max": 0
+          },
+          {
+            "name": "v(grav)",
+            "max": 0
+          },
+          {
+            "name": "v(sy)",
+            "max": 0
+          },
+          {
+            "name": "v(sx)",
+            "max": 0
+          },
+          {
+            "name": "v(py)",
+            "max": 0
+          },
+          {
+            "name": "v(px)",
+            "max": 0
+          },
+          {
+            "name": "v(ga)",
+            "max": 0
+          },
+          {
+            "name": "v(gb)",
+            "max": 0
+          },
+          {
+            "name": "v(na)",
+            "max": 0
+          },
+          {
+            "name": "v(nb)",
+            "max": 0
+          },
+          {
+            "name": "v(edge_source)",
+            "max": 0
+          },
+          {
+            "name": "v(edge)",
+            "max": 0
+          },
+          {
+            "name": "v(button_l)",
+            "max": 0
+          },
+          {
+            "name": "v(button_r)",
+            "max": 0
+          },
+          {
+            "name": "v(reset)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_l)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_r)",
+            "max": 0
+          },
+          {
+            "name": "v(xly.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lyn)",
+            "max": 0
+          },
+          {
+            "name": "v(xry.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(ryn)",
+            "max": 0
+          },
+          {
+            "name": "v(xlx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xrx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(rxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xu1.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu2.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu3.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu4.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu6.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu7.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_l_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_r_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xend.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xcentre.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitl.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitr.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_x)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_y)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_a)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_b)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_c)",
+            "max": 0
+          }
+        ]
+      },
+      {
+        "kind": "baseline",
+        "repeat": 1,
+        "wall_s": 13.564640553,
+        "rows": 850,
+        "columns": 69,
+        "trace_sha256": "c74a8e01f9595fb8163dbe5f353a66332711716eaf6c9c978448f4a9a5252d2f",
+        "max_difference": 0,
+        "differences": [
+          {
+            "name": "v(x)",
+            "max": 0
+          },
+          {
+            "name": "v(y)",
+            "max": 0
+          },
+          {
+            "name": "v(u1)",
+            "max": 0
+          },
+          {
+            "name": "v(u6)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_lx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ly)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_rx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ry)",
+            "max": 0
+          },
+          {
+            "name": "v(run)",
+            "max": 0
+          },
+          {
+            "name": "v(run_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(can_l)",
+            "max": 0
+          },
+          {
+            "name": "v(can_r)",
+            "max": 0
+          },
+          {
+            "name": "v(server)",
+            "max": 0
+          },
+          {
+            "name": "v(bank)",
+            "max": 0
+          },
+          {
+            "name": "v(ground_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(net_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(centre_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(end_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xground.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xnet.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrun.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xlx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xly.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xry.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(railp)",
+            "max": 0
+          },
+          {
+            "name": "v(railm)",
+            "max": 0
+          },
+          {
+            "name": "v(logic)",
+            "max": 0
+          },
+          {
+            "name": "v(grav)",
+            "max": 0
+          },
+          {
+            "name": "v(sy)",
+            "max": 0
+          },
+          {
+            "name": "v(sx)",
+            "max": 0
+          },
+          {
+            "name": "v(py)",
+            "max": 0
+          },
+          {
+            "name": "v(px)",
+            "max": 0
+          },
+          {
+            "name": "v(ga)",
+            "max": 0
+          },
+          {
+            "name": "v(gb)",
+            "max": 0
+          },
+          {
+            "name": "v(na)",
+            "max": 0
+          },
+          {
+            "name": "v(nb)",
+            "max": 0
+          },
+          {
+            "name": "v(edge_source)",
+            "max": 0
+          },
+          {
+            "name": "v(edge)",
+            "max": 0
+          },
+          {
+            "name": "v(button_l)",
+            "max": 0
+          },
+          {
+            "name": "v(button_r)",
+            "max": 0
+          },
+          {
+            "name": "v(reset)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_l)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_r)",
+            "max": 0
+          },
+          {
+            "name": "v(xly.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lyn)",
+            "max": 0
+          },
+          {
+            "name": "v(xry.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(ryn)",
+            "max": 0
+          },
+          {
+            "name": "v(xlx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xrx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(rxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xu1.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu2.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu3.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu4.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu6.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu7.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_l_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_r_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xend.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xcentre.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitl.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitr.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_x)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_y)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_a)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_b)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_c)",
+            "max": 0
+          }
+        ]
+      },
+      {
+        "kind": "candidate",
+        "repeat": 1,
+        "wall_s": 10.330608934000004,
+        "rows": 850,
+        "columns": 69,
+        "trace_sha256": "c74a8e01f9595fb8163dbe5f353a66332711716eaf6c9c978448f4a9a5252d2f",
+        "max_difference": 0,
+        "differences": [
+          {
+            "name": "v(x)",
+            "max": 0
+          },
+          {
+            "name": "v(y)",
+            "max": 0
+          },
+          {
+            "name": "v(u1)",
+            "max": 0
+          },
+          {
+            "name": "v(u6)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_lx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ly)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_rx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ry)",
+            "max": 0
+          },
+          {
+            "name": "v(run)",
+            "max": 0
+          },
+          {
+            "name": "v(run_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(can_l)",
+            "max": 0
+          },
+          {
+            "name": "v(can_r)",
+            "max": 0
+          },
+          {
+            "name": "v(server)",
+            "max": 0
+          },
+          {
+            "name": "v(bank)",
+            "max": 0
+          },
+          {
+            "name": "v(ground_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(net_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(centre_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(end_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xground.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xnet.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrun.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xlx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xly.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xry.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(railp)",
+            "max": 0
+          },
+          {
+            "name": "v(railm)",
+            "max": 0
+          },
+          {
+            "name": "v(logic)",
+            "max": 0
+          },
+          {
+            "name": "v(grav)",
+            "max": 0
+          },
+          {
+            "name": "v(sy)",
+            "max": 0
+          },
+          {
+            "name": "v(sx)",
+            "max": 0
+          },
+          {
+            "name": "v(py)",
+            "max": 0
+          },
+          {
+            "name": "v(px)",
+            "max": 0
+          },
+          {
+            "name": "v(ga)",
+            "max": 0
+          },
+          {
+            "name": "v(gb)",
+            "max": 0
+          },
+          {
+            "name": "v(na)",
+            "max": 0
+          },
+          {
+            "name": "v(nb)",
+            "max": 0
+          },
+          {
+            "name": "v(edge_source)",
+            "max": 0
+          },
+          {
+            "name": "v(edge)",
+            "max": 0
+          },
+          {
+            "name": "v(button_l)",
+            "max": 0
+          },
+          {
+            "name": "v(button_r)",
+            "max": 0
+          },
+          {
+            "name": "v(reset)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_l)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_r)",
+            "max": 0
+          },
+          {
+            "name": "v(xly.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lyn)",
+            "max": 0
+          },
+          {
+            "name": "v(xry.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(ryn)",
+            "max": 0
+          },
+          {
+            "name": "v(xlx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xrx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(rxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xu1.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu2.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu3.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu4.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu6.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu7.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_l_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_r_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xend.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xcentre.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitl.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitr.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_x)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_y)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_a)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_b)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_c)",
+            "max": 0
+          }
+        ]
+      },
+      {
+        "kind": "baseline",
+        "repeat": 2,
+        "wall_s": 13.501676697000002,
+        "rows": 850,
+        "columns": 69,
+        "trace_sha256": "c74a8e01f9595fb8163dbe5f353a66332711716eaf6c9c978448f4a9a5252d2f",
+        "max_difference": 0,
+        "differences": [
+          {
+            "name": "v(x)",
+            "max": 0
+          },
+          {
+            "name": "v(y)",
+            "max": 0
+          },
+          {
+            "name": "v(u1)",
+            "max": 0
+          },
+          {
+            "name": "v(u6)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_lx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ly)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_rx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ry)",
+            "max": 0
+          },
+          {
+            "name": "v(run)",
+            "max": 0
+          },
+          {
+            "name": "v(run_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(can_l)",
+            "max": 0
+          },
+          {
+            "name": "v(can_r)",
+            "max": 0
+          },
+          {
+            "name": "v(server)",
+            "max": 0
+          },
+          {
+            "name": "v(bank)",
+            "max": 0
+          },
+          {
+            "name": "v(ground_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(net_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(centre_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(end_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xground.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xnet.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrun.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xlx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xly.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xry.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(railp)",
+            "max": 0
+          },
+          {
+            "name": "v(railm)",
+            "max": 0
+          },
+          {
+            "name": "v(logic)",
+            "max": 0
+          },
+          {
+            "name": "v(grav)",
+            "max": 0
+          },
+          {
+            "name": "v(sy)",
+            "max": 0
+          },
+          {
+            "name": "v(sx)",
+            "max": 0
+          },
+          {
+            "name": "v(py)",
+            "max": 0
+          },
+          {
+            "name": "v(px)",
+            "max": 0
+          },
+          {
+            "name": "v(ga)",
+            "max": 0
+          },
+          {
+            "name": "v(gb)",
+            "max": 0
+          },
+          {
+            "name": "v(na)",
+            "max": 0
+          },
+          {
+            "name": "v(nb)",
+            "max": 0
+          },
+          {
+            "name": "v(edge_source)",
+            "max": 0
+          },
+          {
+            "name": "v(edge)",
+            "max": 0
+          },
+          {
+            "name": "v(button_l)",
+            "max": 0
+          },
+          {
+            "name": "v(button_r)",
+            "max": 0
+          },
+          {
+            "name": "v(reset)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_l)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_r)",
+            "max": 0
+          },
+          {
+            "name": "v(xly.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lyn)",
+            "max": 0
+          },
+          {
+            "name": "v(xry.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(ryn)",
+            "max": 0
+          },
+          {
+            "name": "v(xlx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xrx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(rxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xu1.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu2.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu3.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu4.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu6.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu7.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_l_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_r_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xend.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xcentre.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitl.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitr.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_x)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_y)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_a)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_b)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_c)",
+            "max": 0
+          }
+        ]
+      },
+      {
+        "kind": "candidate",
+        "repeat": 2,
+        "wall_s": 10.605384996999994,
+        "rows": 850,
+        "columns": 69,
+        "trace_sha256": "c74a8e01f9595fb8163dbe5f353a66332711716eaf6c9c978448f4a9a5252d2f",
+        "max_difference": 0,
+        "differences": [
+          {
+            "name": "v(x)",
+            "max": 0
+          },
+          {
+            "name": "v(y)",
+            "max": 0
+          },
+          {
+            "name": "v(u1)",
+            "max": 0
+          },
+          {
+            "name": "v(u6)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_lx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ly)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_rx)",
+            "max": 0
+          },
+          {
+            "name": "v(pre_ry)",
+            "max": 0
+          },
+          {
+            "name": "v(run)",
+            "max": 0
+          },
+          {
+            "name": "v(run_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(can_l)",
+            "max": 0
+          },
+          {
+            "name": "v(can_r)",
+            "max": 0
+          },
+          {
+            "name": "v(server)",
+            "max": 0
+          },
+          {
+            "name": "v(bank)",
+            "max": 0
+          },
+          {
+            "name": "v(ground_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(net_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(centre_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(end_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xground.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xnet.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrun.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xlx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xly.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xrx.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xry.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(railp)",
+            "max": 0
+          },
+          {
+            "name": "v(railm)",
+            "max": 0
+          },
+          {
+            "name": "v(logic)",
+            "max": 0
+          },
+          {
+            "name": "v(grav)",
+            "max": 0
+          },
+          {
+            "name": "v(sy)",
+            "max": 0
+          },
+          {
+            "name": "v(sx)",
+            "max": 0
+          },
+          {
+            "name": "v(py)",
+            "max": 0
+          },
+          {
+            "name": "v(px)",
+            "max": 0
+          },
+          {
+            "name": "v(ga)",
+            "max": 0
+          },
+          {
+            "name": "v(gb)",
+            "max": 0
+          },
+          {
+            "name": "v(na)",
+            "max": 0
+          },
+          {
+            "name": "v(nb)",
+            "max": 0
+          },
+          {
+            "name": "v(edge_source)",
+            "max": 0
+          },
+          {
+            "name": "v(edge)",
+            "max": 0
+          },
+          {
+            "name": "v(button_l)",
+            "max": 0
+          },
+          {
+            "name": "v(button_r)",
+            "max": 0
+          },
+          {
+            "name": "v(reset)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_l)",
+            "max": 0
+          },
+          {
+            "name": "v(permit_r)",
+            "max": 0
+          },
+          {
+            "name": "v(xly.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lyn)",
+            "max": 0
+          },
+          {
+            "name": "v(xry.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(ryn)",
+            "max": 0
+          },
+          {
+            "name": "v(xlx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(lxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xrx.cp)",
+            "max": 0
+          },
+          {
+            "name": "v(rxn)",
+            "max": 0
+          },
+          {
+            "name": "v(xu1.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu2.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu3.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu4.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu6.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(xu7.pole)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_l_contact)",
+            "max": 0
+          },
+          {
+            "name": "v(hit_r_contact)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xend.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xcentre.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitl.vsense)",
+            "max": 0
+          },
+          {
+            "name": "i(v.xhitr.vsense)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_x)",
+            "max": 0
+          },
+          {
+            "name": "v(screen_y)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_a)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_b)",
+            "max": 0
+          },
+          {
+            "name": "v(phase_c)",
+            "max": 0
+          }
+        ]
+      }
+    ]
+  },
+  "wasm": {
+    "date": "2026-10-24T14:00:24.238Z",
+    "scope": "Node/WASM control of the rebuilt engine. Not a browser or M1 timing. Identical PWL serve and continuous 0.4 s including startup; source and WASM instantiate excluded from timed commands; 1 ms output observations.",
+    "columns": [
+      "v(x)",
+      "v(y)",
+      "v(u1)",
+      "v(u6)",
+      "v(pre_lx)",
+      "v(pre_ly)",
+      "v(pre_rx)",
+      "v(pre_ry)",
+      "v(run)",
+      "v(run_contact)",
+      "v(can_l)",
+      "v(can_r)",
+      "v(server)",
+      "v(bank)",
+      "v(ground_contact)",
+      "v(net_contact)",
+      "v(centre_contact)",
+      "v(end_contact)",
+      "i(v.xground.vsense)",
+      "i(v.xnet.vsense)",
+      "i(v.xrun.vsense)",
+      "i(v.xlx.vsense)",
+      "i(v.xly.vsense)",
+      "i(v.xrx.vsense)",
+      "i(v.xry.vsense)",
+      "v(railp)",
+      "v(railm)",
+      "v(logic)",
+      "v(grav)",
+      "v(sy)",
+      "v(sx)",
+      "v(py)",
+      "v(px)",
+      "v(ga)",
+      "v(gb)",
+      "v(na)",
+      "v(nb)",
+      "v(edge_source)",
+      "v(edge)",
+      "v(button_l)",
+      "v(button_r)",
+      "v(reset)",
+      "v(permit_l)",
+      "v(permit_r)",
+      "v(xly.cp)",
+      "v(lyn)",
+      "v(xry.cp)",
+      "v(ryn)",
+      "v(xlx.cp)",
+      "v(lxn)",
+      "v(xrx.cp)",
+      "v(rxn)",
+      "v(xu1.pole)",
+      "v(xu2.pole)",
+      "v(xu3.pole)",
+      "v(xu4.pole)",
+      "v(xu6.pole)",
+      "v(xu7.pole)",
+      "v(hit_l_contact)",
+      "v(hit_r_contact)",
+      "i(v.xend.vsense)",
+      "i(v.xcentre.vsense)",
+      "i(v.xhitl.vsense)",
+      "i(v.xhitr.vsense)",
+      "v(screen_x)",
+      "v(screen_y)",
+      "v(phase_a)",
+      "v(phase_b)",
+      "v(phase_c)"
+    ],
+    "runs": [
+      {
+        "id": "stock",
+        "repeat": 0,
+        "simulated_s": 0.4,
+        "wall_s": 11.155157520000001,
+        "speed_ratio": 0.03585785313052217,
+        "wasm_sha256": "6b2353445164c539109185f8518793cbd2cc1743fae6e4241e1a1cba9fc82c01",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "rows": 400
+      },
+      {
+        "id": "fast",
+        "repeat": 0,
+        "simulated_s": 0.4,
+        "wall_s": 8.442092009999998,
+        "speed_ratio": 0.04738162051849043,
+        "wasm_sha256": "ff9ea93075cae2172c23f692d07e1e13319392d51c1c61d6a84f6de990b57636",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "rows": 400,
+        "max_difference_from_same_sdk_stock": 0
+      },
+      {
+        "id": "lean",
+        "repeat": 0,
+        "simulated_s": 0.4,
+        "wall_s": 6.49744042,
+        "speed_ratio": 0.06156270379467366,
+        "wasm_sha256": "9ece9bf5d0b14523c167088e6907f52b4fff140a2563c992fe937735b54cb8f1",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "rows": 400,
+        "max_difference_from_same_sdk_stock": 0
+      },
+      {
+        "id": "stock",
+        "repeat": 1,
+        "simulated_s": 0.4,
+        "wall_s": 11.152160947,
+        "speed_ratio": 0.03586748809499584,
+        "wasm_sha256": "6b2353445164c539109185f8518793cbd2cc1743fae6e4241e1a1cba9fc82c01",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "rows": 400
+      },
+      {
+        "id": "fast",
+        "repeat": 1,
+        "simulated_s": 0.4,
+        "wall_s": 8.673200742999999,
+        "speed_ratio": 0.04611907551232843,
+        "wasm_sha256": "ff9ea93075cae2172c23f692d07e1e13319392d51c1c61d6a84f6de990b57636",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "rows": 400,
+        "max_difference_from_same_sdk_stock": 0
+      },
+      {
+        "id": "lean",
+        "repeat": 1,
+        "simulated_s": 0.4,
+        "wall_s": 6.301457526,
+        "speed_ratio": 0.06347737778912073,
+        "wasm_sha256": "9ece9bf5d0b14523c167088e6907f52b4fff140a2563c992fe937735b54cb8f1",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "rows": 400,
+        "max_difference_from_same_sdk_stock": 0
+      },
+      {
+        "id": "stock",
+        "repeat": 2,
+        "simulated_s": 0.4,
+        "wall_s": 11.252456299,
+        "speed_ratio": 0.035547794132339605,
+        "wasm_sha256": "6b2353445164c539109185f8518793cbd2cc1743fae6e4241e1a1cba9fc82c01",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "rows": 400
+      },
+      {
+        "id": "fast",
+        "repeat": 2,
+        "simulated_s": 0.4,
+        "wall_s": 8.852539447,
+        "speed_ratio": 0.04518477465079857,
+        "wasm_sha256": "ff9ea93075cae2172c23f692d07e1e13319392d51c1c61d6a84f6de990b57636",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "rows": 400,
+        "max_difference_from_same_sdk_stock": 0
+      },
+      {
+        "id": "lean",
+        "repeat": 2,
+        "simulated_s": 0.4,
+        "wall_s": 6.33077128,
+        "speed_ratio": 0.0631834546390373,
+        "wasm_sha256": "9ece9bf5d0b14523c167088e6907f52b4fff140a2563c992fe937735b54cb8f1",
+        "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+        "rows": 400,
+        "max_difference_from_same_sdk_stock": 0
+      }
+    ]
+  },
+  "browser": {
+    "date": "2026-10-24T14:25:40.035Z",
+    "environment": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "scope": "Single continuous 0.4 s PWL serve including settling, same circuit and settings, same-SDK signal comparison on 1 ms output grid. Instantiate/source excluded. Not the live operator loop.",
+    "runs": [
+      {
+        "id": "legacy",
+        "simulated_s": 0.4,
+        "wall_s": 12.73479999999702,
+        "speed_ratio": 0.03140999466030826,
+        "rows": 400,
+        "columns": 69
+      },
+      {
+        "id": "stock",
+        "simulated_s": 0.4,
+        "wall_s": 11.911,
+        "speed_ratio": 0.03358240282092184,
+        "rows": 400,
+        "columns": 69
+      },
+      {
+        "id": "lean",
+        "simulated_s": 0.4,
+        "wall_s": 6.62539999999851,
+        "speed_ratio": 0.060373713285249195,
+        "rows": 400,
+        "columns": 69,
+        "max_difference_from_stock": 0
+      }
+    ],
+    "visibility_hidden_count": 0
+  },
+  "browser_frame_probe": {
+    "wall_s": 5.000199999995529,
+    "raf_frames": 15,
+    "raf_Hz": 3.169639083762996,
+    "raf_intervals_ms": [
+      16.700000000000728,
+      16.599999999999454,
+      216.69999999999982,
+      16.700000000000728,
+      16.599999999999454,
+      16.699999999999818,
+      16.700000000000728,
+      199.89999999999964,
+      599.8999999999996,
+      599.9000000000005,
+      616.5,
+      583.1999999999998,
+      616.5,
+      599.8999999999996,
+      599.8999999999996
+    ],
+    "interval50ms_ticks": 100,
+    "visibility": "visible",
+    "focus": true,
+    "user_agent": "Chrome155 Linux x86_64",
+    "scope": "Copied from rendered empty-page probe report. No game, Canvas or WASM; observed rAF scheduling limitation in this environment."
+  },
+  "wasm_semantics": {
+    "date": "2026-10-24T14:06:54.538Z",
+    "scope": "Same five native semantic fixtures evaluated through the WASM command adapter; 17-digit text comparison. Does not exercise every upstream SPICE operator.",
+    "cases": [
+      {
+        "id": "nonlinear-and-ternary",
+        "rows": 1511,
+        "sha256": "e8fa78d272a38aa1615affc0c8d6729bcf5dc89bfdf8b53091e7b7d0cff556ed",
+        "exact_match_to_stock": true
+      },
+      {
+        "id": "ddt-stateful-fallback",
+        "rows": 1511,
+        "sha256": "16bc8458fc4dafc9f2706e0fdd4abde8b7ff5a03e05df391d60a49caa67baa50",
+        "exact_match_to_stock": true
+      },
+      {
+        "id": "gmin-1e-12",
+        "rows": 1511,
+        "sha256": "272f4199b92caa48f371e9dedd5b89309cd1a6be94bbf4df2e8c493bdd0ada0e",
+        "exact_match_to_stock": true
+      },
+      {
+        "id": "gmin-0.0001",
+        "rows": 1511,
+        "sha256": "2a3c39ac1783310111bb10aa4f34902347c19f316cee03804efb1badcfb51257",
+        "exact_match_to_stock": true
+      },
+      {
+        "id": "ac-jacobian",
+        "rows": 51,
+        "sha256": "67d8f220f65799e191e24f19c2df80923b819fc64427a40924757ab7236b4b44",
+        "exact_match_to_stock": true
+      }
+    ]
+  },
+  "native_semantics": {
+    "date": "2026-10-24T13:24:10.908Z",
+    "scope": "Five numerical regression cases including stateful ddt fallback, tiny-denominator gmin behavior and AC Jacobian. These supplement the coupled serve test; they are not full upstream ngspice coverage or browser validation.",
+    "cases": [
+      {
+        "id": "nonlinear-and-ternary",
+        "rows": 1511,
+        "exact_17_digit_text_match": true,
+        "sha256": "0e80768e3a268d9e0ec431023794ebea1916174c5def82b75effafe401240c35"
+      },
+      {
+        "id": "ddt-stateful-fallback",
+        "rows": 1511,
+        "exact_17_digit_text_match": true,
+        "sha256": "ea6ecda404436dc52994c4af2046798e79a47b26c186be6305dfa719b5328936"
+      },
+      {
+        "id": "gmin-1e-12",
+        "rows": 1511,
+        "exact_17_digit_text_match": true,
+        "sha256": "fdd3012a22406a3a61647083b249dbcd6f05300a820fa0e77b516452f4076cc1"
+      },
+      {
+        "id": "gmin-0.0001",
+        "rows": 1511,
+        "exact_17_digit_text_match": true,
+        "sha256": "3f5d7dcb54d85cd71b6c6657fdb6ba68339cc71f7ba3ed034af3e9eca5593b20"
+      },
+      {
+        "id": "ac-jacobian",
+        "rows": 51,
+        "exact_17_digit_text_match": true,
+        "sha256": "67d8f220f65799e191e24f19c2df80923b819fc64427a40924757ab7236b4b44"
+      }
+    ]
+  },
+  "game_checks": {
+    "validation": {
+      "passed": 15,
+      "total": 15
+    },
+    "display-validation": {
+      "passed": 9,
+      "total": 9
+    },
+    "cpu-validation": {
+      "passed": 8,
+      "total": 8
+    }
+  },
+  "limits": "Sampled equality is not equality of every internal adaptive iterate or historical verification. Browser frame probe showed scheduling pauses even without the game. M1/Firefox smoothness requires target-hardware measurement."
+}

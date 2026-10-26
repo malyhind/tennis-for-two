@@ -1,0 +1,69 @@
+{
+  "release": "0.8.0",
+  "dateUTC": "2026-10-25",
+  "browser": "Chrome 155 / Linux cloud",
+  "scope": "Local bilingual instrument, separate switch bench and actual laboratory publisher output; desktop and 390 px CSS layout.",
+  "checks": [
+    {
+      "name": "Game and engineering UI switch RU/EN without recreating a running match",
+      "passed": true,
+      "mode": "Gremlin vs Fox",
+      "pausedClock_s": 15.3,
+      "leftKnob": 18,
+      "rightKnob": 29.200000762939453
+    },
+    {
+      "name": "Header RU switch updates the embedded instrument; child EN switch updates the host route and labels",
+      "passed": true
+    },
+    {
+      "name": "Resuming the same match advances circuit time from 15.30 to 18.92 s",
+      "passed": true
+    },
+    {
+      "name": "Final startup document and iframe titles use the selected language",
+      "passed": true
+    },
+    {
+      "name": "Final host player-count label changes EN/RU/EN with clock preserved at 1.32 s",
+      "passed": true
+    },
+    {
+      "name": "English bench completes transient analysis and retains results when switched to Russian",
+      "passed": true,
+      "fullCycle_Hz": 39.09,
+      "duty_pct": [
+        47.9,
+        28.1,
+        24.0
+      ],
+      "samples": 6000
+    },
+    {
+      "name": "Game at 390 px has no document horizontal overflow",
+      "passed": true,
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    {
+      "name": "Laboratory at 390 px has no document horizontal overflow; title icon is inline",
+      "passed": true,
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    {
+      "name": "Restrained School branding, game icon, covers and both PDF layouts visually reviewed",
+      "passed": true
+    },
+    {
+      "name": "CRT glass contains beam image without pause or diagnostic text overlays",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Cloud CPU rendering only; M1/Firefox speed and hardware GPU parity unmeasured.",
+    "A 390 px iframe checks CSS layout, not a physical touchscreen.",
+    "No public deployment or completed browser download test.",
+    "Extension metadata errors are separate from application behavior."
+  ]
+}

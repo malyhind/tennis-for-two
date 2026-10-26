@@ -1,0 +1,132 @@
+{
+  "profile": "gremlin-tennis-spice-0.3.1",
+  "date": "2026-10-25T18:06:19.163Z",
+  "scope": "Numerical and functional checks of this declared macromodel; no measurement of original hardware.",
+  "solver": "******\n** ngspice-45 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2025, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sat Oct 24 16:46:25 UTC 2026\n******",
+  "tests": [
+    {
+      "name": "Pinned WASM bytes match the declared modified build",
+      "passed": true,
+      "seconds": 0.004328761999999997
+    },
+    {
+      "name": "RC charge and altered-source resume retain charge",
+      "passed": true,
+      "seconds": 0.06601916
+    },
+    {
+      "name": "R-L coil current agrees with analytic transient",
+      "passed": true,
+      "seconds": 0.008067447999999984
+    },
+    {
+      "name": "Capacitor switching gives charge-sharing bounce without reset",
+      "passed": true,
+      "seconds": 0.00989756700000001
+    },
+    {
+      "name": "Finite amplifier gain and rail saturation",
+      "passed": true,
+      "seconds": 0.013554731000000004
+    },
+    {
+      "name": "Malformed simulator command fails explicitly",
+      "passed": true,
+      "seconds": 0.0005570879999999931
+    },
+    {
+      "name": "Serve, opponent interlock and two electrical returns",
+      "passed": true,
+      "seconds": 2.963501471
+    },
+    {
+      "name": "Net and ground bounces arise in switched holding networks",
+      "passed": true,
+      "seconds": 1.203402334
+    },
+    {
+      "name": "Right end selects right serve; manual reset restores left",
+      "passed": true,
+      "seconds": 1.4262518650000002
+    },
+    {
+      "name": "Rolling C/L checkpoints preserve an active rally",
+      "passed": true,
+      "seconds": 3.4342380410000004
+    },
+    {
+      "name": "Halving maximum integration step converges on the rally",
+      "passed": true,
+      "seconds": 2.785850609000001
+    },
+    {
+      "name": "Default 30-second rolling window bounds the saved plot",
+      "passed": true,
+      "seconds": 17.693565287000002
+    },
+    {
+      "name": "Stable solver tolerances agree with the previous strict profile",
+      "passed": true,
+      "seconds": 3.0651139429999965
+    },
+    {
+      "name": "Continuous and sliced transient agree on the same netlist",
+      "passed": true,
+      "seconds": 1.6415684099999999
+    },
+    {
+      "name": "Native ngspice and WASM agree on identical circuit and inputs",
+      "skipped": true,
+      "reason": "Set NGSPICE to native binary"
+    }
+  ],
+  "metrics": {
+    "rally": {
+      "returns": 5,
+      "hitCount": 6,
+      "maxPositionChange_V": 1.4547624243029844
+    },
+    "bounces": {
+      "eventMask": 23,
+      "minHeight_V": -0.09888489225970076
+    },
+    "checkpoints": {
+      "count": 7,
+      "maxPositionError_V": 0.000037983024498089435,
+      "limit_V": 0.005
+    },
+    "stepConvergence": {
+      "maxPositionError_V": 0.004226630218390426,
+      "maxSteps_s": [
+        0.001,
+        0.0005
+      ],
+      "limit_V": 0.01
+    },
+    "boundedHistory": {
+      "simulated_s": 66.00000000002825,
+      "checkpoints": 2,
+      "savedPointsAfterSecondCheckpoint": 5720,
+      "wasmHeapBytes": 312344576
+    },
+    "solverToleranceComparison": {
+      "simulated_s": 3.2,
+      "maxPositionError_V": 0.00030405101816910474,
+      "limit_V": 0.01,
+      "reference_reltol": 0.000001,
+      "stable_reltol": 0.00001
+    },
+    "slicedTransient": {
+      "maxOutputError_V": 0.0001855763332372362,
+      "limit_V": 0.03
+    }
+  },
+  "hashes": {
+    "app/tennis.cir": "36d638a1e66753349af966cb8d0143134d4569da160dca7db1a314d2164b8f49",
+    "app/circuit.js": "7b07f3708f8ac3ef1d16154d0204fd431f6e7a38c952deafbc557eac90430d55",
+    "app/spice-session.js": "324cbf9905c976b7e99357ac0ada996b662d43c2b5014af96fbb039f86699e38",
+    "app/vendor/spice.wasm": "7e92084ce97153e5288919cfcd64a2255dad37a7e5d9abf2d1350f09df667a5c"
+  },
+  "passed": 14,
+  "failed": 0
+}

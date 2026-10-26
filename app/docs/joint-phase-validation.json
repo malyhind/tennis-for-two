@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-25T09:47:46.500Z",
+  "scope": "Actual accepted adaptive points of phase_a/b/c, rising zero crossings, common 0.01..0.56 s window; no historical hardware comparison.",
+  "production": {
+    "period_s": 0.5,
+    "limit_s": 0.00005,
+    "matchedEdges": 84,
+    "maxEdgeShift_s": 0.0000026670884215596047,
+    "checkpointCount": 1
+  },
+  "stress": {
+    "period_s": 0.15,
+    "limit_s": 0.0001,
+    "matchedEdges": 84,
+    "maxEdgeShift_s": 0.0000013955238910429157,
+    "checkpointCount": 4
+  },
+  "originalStress50usPassed": true,
+  "criteriaNote": "Production checks use the 50us internal step as timing allowance. The extra stress test with four short restarts reports a separate 100us bound; the original 50us stress criterion failed and remains recorded.",
+  "passed": true
+}

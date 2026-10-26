@@ -1,0 +1,7 @@
+{
+  "format": "tft-demo-1",
+  "available": false,
+  "defaultEnabled": false,
+  "recordCommand": "node tools/record-demo.mjs",
+  "note": "Optional recording is generated locally. Recorder, codec and player are included."
+}

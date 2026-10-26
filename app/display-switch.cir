@@ -1,0 +1,102 @@
+* Electronic Switch for Tennis Programming, BNL EH1-900-2-3 A, 1959-11-18.
+* Transcription of the timing/selector network; external supply rails and
+* six analogue computer outputs are ports. Transformer/bridge/CRT omitted.
+* Q identifiers are ours: the archival sheet gives no device designators.
+*
+* DEVICE MODEL STATUS: preliminary Ge PNP Gummel-Poon surrogate. RCA SC-11
+* (1964), printed p.131, gives typical small-signal hfe=75 at Ic=.6mA,
+* Vce=-9V, and identifies 2N140 as Ge PNP. It is NOT a fitted switching model.
+* IS/BR/VAF/CJ/TF/TR and the 1N100 surrogate below are engineering assumptions.
+* Maximum ratings are not avalanche thresholds and are not used as such.
+.subckt TFT_DISPLAY av ah bv bh cv ch scope_v scope_h phase_a phase_b phase_c pp12 pp6 mm6 mm22 params: BETA=75 ISGE=1u REVERSE=5 CTIME=.5u
+.model GE140 PNP(IS={ISGE} BF={BETA} BR={REVERSE} VAF=45
++ RB=50 RC=5 RE=2 CJE=100p CJC=10p TF=20n TR=100n EG=.67 XTI=3 TNOM=25)
+.model GE100 D(IS=1u N=1.3 RS=20 CJO=2p EG=.67 XTI=3 TNOM=25)
+
+* Astable: 20k base returns, .5uF cross-coupling. The right 2k load is
+* drawn as two 1k resistors, with the pulse pickoff at their midpoint.
+Racl osc_l 0 2k
+Rabl base_l 0 20k
+Rabr base_r 0 20k
+Racr1 pulse_tap 0 1k
+Racr2 osc_r pulse_tap 1k
+Cacl osc_l base_r {CTIME}
+Cacr osc_r base_l {CTIME}
+Qal osc_l base_l emit_l GE140
+Qar osc_r base_r emit_r GE140
+Rael emit_l pp6 510
+Raer emit_r pp6 510
+
+* Emitter-current inverters. The right astable drives BOTH B and C,
+* suppressing those selectors while A is selected.
+Qda phase_a emit_l pp6 GE140
+Qdb phase_b emit_r pp6 GE140
+Qdc phase_c emit_r pp6 GE140
+
+* Positive differentiated edge toggles the cross-coupled bistable.
+Ctrigger pulse_tap trigger 1n
+Rtrigger trigger 0 5.1k
+DtriggerL trigger ff_l GE100
+DtriggerR trigger ff_r GE100
+Rfcl ff_l 0 2k
+Rfcr ff_r 0 2k
+Rfbl ff_bl pp12 30k
+Rfbr ff_br pp12 30k
+RfcrossL ff_l ff_br 10k
+RfcrossR ff_r ff_bl 10k
+CfcrossL ff_l ff_br 1n
+CfcrossR ff_r ff_bl 1n
+Qfl ff_l ff_bl ff_el GE140
+Qfr ff_r ff_br ff_er GE140
+Rfel ff_el pp6 510
+Rfer ff_er pp6 510
+Qdfb phase_b ff_el pp6 GE140
+Qdfc phase_c ff_er pp6 GE140
+
+* Three level-shifted selector drives. The left diode symbol faces left
+* on the sheet but has the SAME electrical polarity as the other two:
+* anode at -6V, cathode at the phase collector.
+Rpa phase_a mm22 5.1k
+Rpb phase_b mm22 5.1k
+Rpc phase_c mm22 5.1k
+Dpa mm6 phase_a GE100
+Dpb mm6 phase_b GE100
+Dpc mm6 phase_c GE100
+RpullA phase_a pp12 51k
+RpullB phase_b pp12 51k
+RpullC phase_c pp12 51k
+
+Xkeys av ah bv bh cv ch scope_v scope_h phase_a phase_b phase_c TFT_KEYS BETA={BETA} ISGE={ISGE} REVERSE={REVERSE}
+.ends TFT_DISPLAY
+
+* Separate key bank permits DC transfer/leakage tests of the SAME devices.
+.subckt TFT_KEYS av ah bv bh cv ch scope_v scope_h phase_a phase_b phase_c params: BETA=75 ISGE=1u REVERSE=5
+.model GE140 PNP(IS={ISGE} BF={BETA} BR={REVERSE} VAF=45
++ RB=50 RC=5 RE=2 CJE=100p CJC=10p TF=20n TR=100n EG=.67 XTI=3 TNOM=25)
+* Six PNP analogue keys, 51k/1k input dividers and common emitter outputs.
+* No ideal switches, behavioural oscillators or externally scheduled gates.
+Rav av av_c 51k
+Rav0 av_c 0 1k
+Ravb phase_a av_b 51k
+Qav av_c av_b scope_v GE140
+Rah ah ah_c 51k
+Rah0 ah_c 0 1k
+Rahb phase_a ah_b 51k
+Qah ah_c ah_b scope_h GE140
+Rbv bv bv_c 51k
+Rbv0 bv_c 0 1k
+Rbvb phase_b bv_b 51k
+Qbv bv_c bv_b scope_v GE140
+Rbh bh bh_c 51k
+Rbh0 bh_c 0 1k
+Rbhb phase_b bh_b 51k
+Qbh bh_c bh_b scope_h GE140
+Rcv cv cv_c 51k
+Rcv0 cv_c 0 1k
+Rcvb phase_c cv_b 51k
+Qcv cv_c cv_b scope_v GE140
+Rch ch ch_c 51k
+Rch0 ch_c 0 1k
+Rchb phase_c ch_b 51k
+Qch ch_c ch_b scope_h GE140
+.ends TFT_KEYS

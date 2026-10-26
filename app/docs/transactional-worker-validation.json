@@ -1,0 +1,20 @@
+{
+  "dateUTC": "2026-10-25T13:37:21.785Z",
+  "scope": "Real production WASM and worker transport; candidate init rejection is injected using the error captured on the public 0.8.1 page. This is not an exact replay of the lost internal SPICE state.",
+  "tests": [
+    {
+      "name": "Rejected candidates leave live Gear history, clock and beam bit-identical",
+      "passed": true,
+      "bitIdenticalSamples": 45,
+      "rejectedCandidates": 5,
+      "recoveredWorkerRestarts": 1,
+      "finalTime_s": 0.2652533718851904
+    },
+    {
+      "name": "Unrelated candidate errors remain fatal instead of being silently deferred",
+      "passed": true,
+      "deferredRestarts": 0
+    }
+  ],
+  "release": "0.8.3"
+}

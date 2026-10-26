@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-24T14:40:06.750Z",
+  "builder": "candidate-game/tools/build_solver.py",
+  "success": true,
+  "exact_69_signal_match": true,
+  "wall_s": 6.4930400299999995,
+  "trace_sha256": "9a533f98a137f6d12c211eaf9751e15f2a402b745dc59662b5495b6631cf57e8",
+  "scope": "Independent rebuild through the distributed optional developer helper. Numerical check, no bit-for-bit binary reproducibility claim."
+}

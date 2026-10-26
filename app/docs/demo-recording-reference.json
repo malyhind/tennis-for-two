@@ -1,0 +1,73 @@
+{
+  "format": "tft-demo-1",
+  "duration_s": 15.16667425838705,
+  "playbackRate": 1,
+  "defaultEnabled": false,
+  "source": "ngspice 45.2 / production joint transient / IEEE-754 f64",
+  "seed": 44,
+  "warmupBeforeRecording_s": 1,
+  "recordOrigin_s": 1.0009697381067046,
+  "tailReset_s": 0,
+  "closingResetTime_s": null,
+  "closingResetHeight_V": null,
+  "closingTarget_s": 8,
+  "naturalEndTime_s": 14.834337288640972,
+  "loopBoundary": "settled left serve after low closing rally; matched accepted beam phase",
+  "recordingRevision": 5,
+  "mechanicsRecorded": true,
+  "frames": {
+    "url": "frames.json.gz",
+    "encoding": "gzip-json-utf8",
+    "count": 3031,
+    "rawSHA256": "a856718179b9de04b5308fd99418f32af652f93fd5c675e3608145b0a781bb42",
+    "sha256": "f25eda3719a20d22e7e65449d2c94b3bed772312e460f95bc0a431f4837d2c9e",
+    "compressedBytes": 503079
+  },
+  "beam": {
+    "url": "beam.bin.gz",
+    "encoding": "gzip-byte-plane-f64-le-v1",
+    "rows": 1034219,
+    "compressedBytes": 21403990,
+    "decodedBytes": 33095008,
+    "sha256": "28d4618663e1248904b52ad92d7ba489d625caa48660ef82b42aa3a14ae0a052",
+    "rawSHA256": "63b70ecb3e8ce461d02d5bd994f4cb316036f9a231c188d8ed8d57771a593a9b",
+    "firstTime_s": 0,
+    "lastTime_s": 15.166624258387053
+  },
+  "solver": {
+    "maxStep_s": 5e-05,
+    "reltol": 0.0001
+  },
+  "hits": 10,
+  "workerHandoffs": 32,
+  "deferredHandoffs": 0,
+  "sourceSHA256": {
+    "joint-circuit.js": "6946fac642249518bf03ec02124ee031dc0eafa81786f104f564c58967008b0b",
+    "engine.js": "2d908c3a7e84f16d540a968d233a3c5f265c5f7f51b9bd84b1e228279c00f2c2",
+    "spice-worker.js": "c889ef09f81201ada8197731080f8b19dc42a81d7cd9931441323274d6e3997c",
+    "tennis.cir": "36d638a1e66753349af966cb8d0143134d4569da160dca7db1a314d2164b8f49",
+    "display-switch.cir": "31f7e1f1d434ca5ff13d35c25e2e05afd1afac552bdec21f3a2146fda1fed23d",
+    "scope.cir": "2117edccdf48f8754ccaf521a48cf28d11761733a4df17111b7072ba6e406d9d",
+    "vendor/spice.wasm": "7e92084ce97153e5288919cfcd64a2255dad37a7e5d9abf2d1350f09df667a5c",
+    "controller-mechanics.js": "ce69c02fe8e88be2fa726eda79d6dc86ae17243b3e55cb20f401007017d43ce1",
+    "cpu-player.js": "5aae7de62d7a3a7406f7f003fb209b1026e313de7e01a84adefe024d12f702df"
+  },
+  "seam": {
+    "startBall": [
+      -61.99378838676642,
+      20.000000275354033
+    ],
+    "endBall": [
+      -61.9937883867795,
+      20.00000027540611
+    ],
+    "controlDelta": [
+      -1.1123503451671013e-08,
+      -1.1123503451671013e-08
+    ],
+    "beamPhaseError_V": 0.20479055362636778,
+    "beamPathBreak": true,
+    "phosphorReset": false
+  },
+  "createdUTC": "2026-10-25T19:05:12.876Z"
+}

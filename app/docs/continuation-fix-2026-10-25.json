@@ -1,0 +1,25 @@
+{
+  "revision": "2026-10-25.1",
+  "base_releases": [
+    "0.8.1",
+    "0.8.2"
+  ],
+  "scope": "Only continuation and Worker handoff changed. The .cir files, compiled solver, deck definition, beam, controllers and UI retain their release bytes.",
+  "sha256": {
+    "app/engine.js": "2d908c3a7e84f16d540a968d233a3c5f265c5f7f51b9bd84b1e228279c00f2c2",
+    "app/spice-worker.js": "c889ef09f81201ada8197731080f8b19dc42a81d7cd9931441323274d6e3997c",
+    "app/joint-circuit.js": "6946fac642249518bf03ec02124ee031dc0eafa81786f104f564c58967008b0b"
+  },
+  "base_sha256": {
+    "app/engine.js": "8694ac9868bc5baa108d0c50279017b7bec90e508140d21bc987b3a65023c183",
+    "app/spice-worker.js": "fd051c1b92666cba6c422f242c8bbd2a72dcc19c9bff2fd752a53d5632dadd8f",
+    "app/joint-circuit.js": "70b26c7bf53ed67fbc8873967b71f0b60b51fa65e19fac9a844d29ef9f619802"
+  },
+  "deckDefinitionSha256": "6ff2cdb4fd30029c9b65e96a8de0a32da4615df337109abefc43cd51783fb7a1",
+  "release": "0.8.3",
+  "current_sha256": {
+    "app/engine.js": "2d908c3a7e84f16d540a968d233a3c5f265c5f7f51b9bd84b1e228279c00f2c2",
+    "app/spice-worker.js": "c889ef09f81201ada8197731080f8b19dc42a81d7cd9931441323274d6e3997c",
+    "app/joint-circuit.js": "6946fac642249518bf03ec02124ee031dc0eafa81786f104f564c58967008b0b"
+  }
+}

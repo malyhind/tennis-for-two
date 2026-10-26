@@ -1,0 +1,35 @@
+{
+  "release": "0.7.0",
+  "dateUTC": "2026-10-25",
+  "browser": "Chrome 155 / Linux cloud",
+  "scope": "Local production instrument and actual r9 published pages; desktop UI only.",
+  "checks": [
+    {
+      "name": "Instrument boots with visible 0.7.0 labels and round knobs",
+      "passed": true
+    },
+    {
+      "name": "Physical D key changes left knob65->66; pointer rotates",
+      "passed": true
+    },
+    {
+      "name": "Two CPU mode starts a rally; left49/right61 observed",
+      "passed": true,
+      "simulated_s": 7.34
+    },
+    {
+      "name": "External pause freezes clock at3.81s across observations; CRT glass has no text overlay",
+      "passed": true
+    },
+    {
+      "name": "Actual r9 game detail and linked research layout, materials and typography reviewed",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Mobile/404 behavior was checked in0.6.0; no claim of a new physical touchscreen test.",
+    "GPU parity and M1/Firefox performance unmeasured.",
+    "Extension metadata errors are separate from game application errors.",
+    "No public deployment or browser download completion test."
+  ]
+}

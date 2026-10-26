@@ -1,0 +1,374 @@
+{
+  "release": "0.5.2",
+  "date": "2026-10-25T07:02:40.541Z",
+  "scope": "Discrete display timing/key bank with preliminary Ge device models and nominal DC supply ports. Numerical agreement is not historical calibration.",
+  "tests": [
+    {
+      "name": "Discrete astable and bistable select three channels without an external clock",
+      "passed": true
+    },
+    {
+      "name": "Reducing maximum step from 20 us to 2 us preserves the cycle",
+      "passed": true
+    },
+    {
+      "name": "Bounded profile speeds the same circuit within declared error limits",
+      "passed": true
+    },
+    {
+      "name": "Every selected key passes its own input and rejects the other axis",
+      "passed": true
+    },
+    {
+      "name": "Inactive key input remains isolated from the common output",
+      "passed": true
+    },
+    {
+      "name": "Test sweep sources produce nonconstant scope outputs through the key bank",
+      "passed": true
+    },
+    {
+      "name": "Captured U7/U2 values are transmitted by channel A",
+      "passed": true
+    },
+    {
+      "name": "Exposed model variations retain three-phase operation",
+      "passed": true
+    },
+    {
+      "name": "Native ngspice and WASM agree on identical discrete network and sources",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "baseline": {
+      "samples": 12000,
+      "settle_s": 0.04,
+      "frequency_Hz": [
+        78.168621569372,
+        39.088675113193304,
+        39.084311152420604
+      ],
+      "repeat_Hz": 39.08649313280695,
+      "historical_reference_Hz": 36,
+      "relative_frequency_difference": 0.08573592035574862,
+      "selected_fraction": [
+        0.4926,
+        0.2512,
+        0.2561
+      ],
+      "blank_fraction": 0.0001,
+      "overlap_fraction": 0,
+      "edge_times_s": [
+        [
+          0.05181029866965951,
+          0.0646102973169029,
+          0.0774102946713552,
+          0.09019029793114187,
+          0.10299029675516723,
+          0.1157702993692189,
+          0.12857029744256984,
+          0.14137029563411058,
+          0.15415029804971608,
+          0.16695029693814745,
+          0.17973030001547266,
+          0.1925302975808552,
+          0.20533029609794107,
+          0.21811029828154427,
+          0.2309102970951847
+        ],
+        [
+          0.045430277369781204,
+          0.07101027786938746,
+          0.09659027835878937,
+          0.12219026897637852,
+          0.1477702769825945,
+          0.17335027760632282,
+          0.19893027807333405,
+          0.22451027892341133
+        ],
+        [
+          0.05821028028976001,
+          0.08381027608353951,
+          0.10939027680650333,
+          0.13497027729614633,
+          0.1605502778993983,
+          0.1861502749809691,
+          0.2117302764633416,
+          0.23731027703017768
+        ]
+      ],
+      "wall_s": 2.1590142259999996,
+      "options": {
+        "mode": "markers",
+        "beta": 75,
+        "temperature": 25,
+        "accuracy": "reference",
+        "duration": 0.24,
+        "maxStep": 0.00002,
+        "sample": 0.00002
+      }
+    },
+    "stepConvergence": {
+      "maxSteps_s": [
+        0.00002,
+        0.000002
+      ],
+      "frequency_difference_Hz": 4.4204817584159173e-7,
+      "max_duty_difference": 0.00009999999999998899
+    },
+    "boundedProfile": {
+      "errors": {
+        "relative_frequency_error": 0.00011168309143137043,
+        "max_edge_difference_s": 0.000020001474608094538,
+        "max_settled_scope_error_V": 0.0000036880323890375877,
+        "settled_scope_RMS_error_V": 1.7229700474298465e-7,
+        "max_duty_difference": 0.0001000000000000445,
+        "excluded_transition_margin_s": 0.0001
+      },
+      "same_window_s": 0.24,
+      "reference_wall_s": 2.1590142259999996,
+      "bounded_wall_s": 1.1666640659999994,
+      "same_window_speedup": 1.8505877475101737,
+      "short_window_s": 0.12,
+      "short_wall_s": 0.5859776730000013,
+      "limits": {
+        "relative_frequency_error": 0.001,
+        "max_edge_difference_s": 0.00005,
+        "max_settled_scope_error_V": 0.01,
+        "settled_scope_RMS_error_V": 0.003,
+        "max_duty_difference": 0.003
+      }
+    },
+    "keyTransfers": [
+      {
+        "input": "av",
+        "selected_gain": 0.018848839868513316,
+        "cross_axis_gain": -1.6336550168194464e-12
+      },
+      {
+        "input": "ah",
+        "selected_gain": 0.0188488398685133,
+        "cross_axis_gain": -1.6323747908941755e-12
+      },
+      {
+        "input": "bv",
+        "selected_gain": 0.018848839868514863,
+        "cross_axis_gain": -1.6328501051265931e-12
+      },
+      {
+        "input": "bh",
+        "selected_gain": 0.018848839868514985,
+        "cross_axis_gain": -1.6316101247859648e-12
+      },
+      {
+        "input": "cv",
+        "selected_gain": 0.018848839868514954,
+        "cross_axis_gain": -1.631739882101968e-12
+      },
+      {
+        "input": "ch",
+        "selected_gain": 0.018848839868512803,
+        "cross_axis_gain": -1.6330145569121158e-12
+      }
+    ],
+    "inactive_key_gain": -4.420352972545061e-13,
+    "sweepOutputs": {
+      "scope_X_range_V": 3.0666875233144317,
+      "scope_Y_range_V": 1.5192732951290968,
+      "wall_s": 1.5583199999999997,
+      "bounded_errors": {
+        "relative_frequency_error": 0.0001953755264082559,
+        "max_edge_difference_s": 0.000019998221410647,
+        "max_settled_scope_error_V": 0.00005880536208602294,
+        "settled_scope_RMS_error_V": 0.000010703899792300592,
+        "max_duty_difference": 0.000250000000000028,
+        "excluded_transition_margin_s": 0.0001
+      }
+    },
+    "capturedFrame": {
+      "U7_X_V": 37.5,
+      "U2_Y_V": 48,
+      "selected_output_change_V": [
+        1.4608064360322581,
+        0.5277914593283649
+      ],
+      "expected_change_V": [
+        1.46078508980875,
+        0.527767516318
+      ]
+    },
+    "sensitivity": [
+      {
+        "options": {
+          "beta": 50
+        },
+        "repeat_Hz": 39.192644203084946,
+        "selected_fraction": [
+          0.4775,
+          0.28275,
+          0.2395
+        ],
+        "bounded_errors": {
+          "relative_frequency_error": 0.0003914598777701582,
+          "max_edge_difference_s": 0.000019999009384041866,
+          "max_settled_scope_error_V": 0.0000011711912439871242,
+          "settled_scope_RMS_error_V": 6.041215595911501e-8,
+          "max_duty_difference": 0.000250000000000028,
+          "excluded_transition_margin_s": 0.0001
+        }
+      },
+      {
+        "options": {
+          "beta": 100
+        },
+        "repeat_Hz": 39.032006557165225,
+        "selected_fraction": [
+          0.48,
+          0.28,
+          0.24
+        ],
+        "bounded_errors": {
+          "relative_frequency_error": 0.00019521969511142136,
+          "max_edge_difference_s": 0.000019998954636460398,
+          "max_settled_scope_error_V": 0.0000028154800431057225,
+          "settled_scope_RMS_error_V": 1.3797198204123055e-7,
+          "max_duty_difference": 0.0005000000000000004,
+          "excluded_transition_margin_s": 0.0001
+        }
+      },
+      {
+        "options": {
+          "temperature": 10
+        },
+        "repeat_Hz": 39.115981390464924,
+        "selected_fraction": [
+          0.4785,
+          0.28125,
+          0.24
+        ],
+        "bounded_errors": {
+          "relative_frequency_error": 0.00019558855936123285,
+          "max_edge_difference_s": 0.000019998792319939063,
+          "max_settled_scope_error_V": 5.746102954978793e-7,
+          "settled_scope_RMS_error_V": 2.8462888710253076e-8,
+          "max_duty_difference": 0.000250000000000028,
+          "excluded_transition_margin_s": 0.0001
+        }
+      },
+      {
+        "options": {
+          "temperature": 40
+        },
+        "repeat_Hz": 39.123631771292835,
+        "selected_fraction": [
+          0.4785,
+          0.2815,
+          0.24
+        ],
+        "bounded_errors": {
+          "relative_frequency_error": 0.0001956711063795375,
+          "max_edge_difference_s": 0.000019996915657419234,
+          "max_settled_scope_error_V": 0.000007248918758695488,
+          "settled_scope_RMS_error_V": 3.545213430348424e-7,
+          "max_duty_difference": 0.0007500000000000284,
+          "excluded_transition_margin_s": 0.0001
+        }
+      },
+      {
+        "options": {
+          "beta": 50,
+          "temperature": 10
+        },
+        "repeat_Hz": 39.22403706212521,
+        "selected_fraction": [
+          0.47725,
+          0.28325,
+          0.23925
+        ],
+        "bounded_errors": {
+          "relative_frequency_error": 0.00017932804242080897,
+          "max_edge_difference_s": 0.000019999216881533277,
+          "max_settled_scope_error_V": 3.810494779710183e-7,
+          "settled_scope_RMS_error_V": 1.7669299071976678e-8,
+          "max_duty_difference": 0.00024999999999997247,
+          "excluded_transition_margin_s": 0.0001
+        }
+      },
+      {
+        "options": {
+          "beta": 50,
+          "temperature": 40
+        },
+        "repeat_Hz": 39.23876846496732,
+        "selected_fraction": [
+          0.47775,
+          0.28325,
+          0.239
+        ],
+        "bounded_errors": {
+          "relative_frequency_error": 0.00019613232561760218,
+          "max_edge_difference_s": 0.000019997400321325465,
+          "max_settled_scope_error_V": 0.0000036824936052726187,
+          "settled_scope_RMS_error_V": 2.2362222426639483e-7,
+          "max_duty_difference": 0,
+          "excluded_transition_margin_s": 0.0001
+        }
+      },
+      {
+        "options": {
+          "beta": 100,
+          "temperature": 10
+        },
+        "repeat_Hz": 39.062471764905,
+        "selected_fraction": [
+          0.4795,
+          0.28,
+          0.24
+        ],
+        "bounded_errors": {
+          "relative_frequency_error": 7.235183131471829e-7,
+          "max_edge_difference_s": 0.000019997457613482594,
+          "max_settled_scope_error_V": 7.708087208513348e-7,
+          "settled_scope_RMS_error_V": 3.8212569286535514e-8,
+          "max_duty_difference": 0.00024999999999997247,
+          "excluded_transition_margin_s": 0.0001
+        }
+      },
+      {
+        "options": {
+          "beta": 100,
+          "temperature": 40
+        },
+        "repeat_Hz": 39.07776315406763,
+        "selected_fraction": [
+          0.47975,
+          0.28025,
+          0.24
+        ],
+        "bounded_errors": {
+          "relative_frequency_error": 0.00019489993534042868,
+          "max_edge_difference_s": 0.00001999610136071972,
+          "max_settled_scope_error_V": 0.000008523358690393223,
+          "settled_scope_RMS_error_V": 4.3872567500012625e-7,
+          "max_duty_difference": 0.000250000000000028,
+          "excluded_transition_margin_s": 0.0001
+        }
+      }
+    ],
+    "nativeComparison": {
+      "rows": 12000,
+      "max_voltage_difference_V": 0.025678613688797203,
+      "max_scope_difference_V": 0.0016966068069450557,
+      "frequency_difference_Hz": 2.8888536007798393e-10
+    }
+  },
+  "hashes": {
+    "app/display-switch.cir": "31f7e1f1d434ca5ff13d35c25e2e05afd1afac552bdec21f3a2146fda1fed23d",
+    "app/display-circuit.js": "c5b3c069ba86d4ff5fe7314c0c08a200852e95baecc05867777837f6907539b4",
+    "app/spice-session.js": "324cbf9905c976b7e99357ac0ada996b662d43c2b5014af96fbb039f86699e38",
+    "app/vendor/spice.wasm": "7e92084ce97153e5288919cfcd64a2255dad37a7e5d9abf2d1350f09df667a5c"
+  },
+  "passed": 9,
+  "failed": 0
+}

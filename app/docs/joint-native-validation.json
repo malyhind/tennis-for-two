@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-25T06:43:51.880Z",
+  "scope": "Same joined deck and PWL input; native ngspice 45.2 versus eval2 WASM; 20us post-analysis linearized grid, 0.4s. Unexcluded errors and edge/settled errors reported separately; this is numerical model comparison, not hardware validation.",
+  "rows": 20001,
+  "columns": [
+    "v(x)",
+    "v(y)",
+    "v(plate_x)",
+    "v(plate_y)",
+    "v(phase_a)",
+    "v(phase_b)",
+    "v(phase_c)"
+  ],
+  "maxDifferenceV": [
+    0.0003766818985226905,
+    0.0004047299124983134,
+    76.36269897948245,
+    16.809284514776927,
+    11.981277934046147,
+    14.673491053321179,
+    14.672873639149046
+  ],
+  "edgeComparison": {
+    "matched": 108,
+    "maxShift_s": 0.0136601277946381
+  },
+  "settled": {
+    "start_s": 0.04,
+    "edgeExclusion_s": 0.00015,
+    "rows": 17118,
+    "maxDifferenceV": [
+      0.000010232527550613213,
+      0.000008474135531288951,
+      76.36269897948245,
+      16.808907699160514,
+      0.001418189148827409,
+      14.586605376862725,
+      14.585381206297027
+    ]
+  },
+  "criteria": {
+    "ballWholeRunV": 0.001,
+    "phaseEdgeShift_s": 0.00005,
+    "settledAllSignalsV": 0.005,
+    "limitations": "The original 20mV pointwise criterion fails at edges. These declared separate timing/amplitude checks characterize that failure; they do not establish exact equality."
+  },
+  "strictPointwise20mVPassed": false,
+  "passed": false
+}

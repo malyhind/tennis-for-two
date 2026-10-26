@@ -1,7 +1,7 @@
 {
   "version": "0.8.4",
   "edition": "standalone-source",
-  "revision": 4,
+  "revision": 5,
   "derivedFrom": "a88bfc8359a76bd22bed7391f91cbd20fc70bf81",
   "physicalModelSHA256": {
     "joint-circuit.js": "6946fac642249518bf03ec02124ee031dc0eafa81786f104f564c58967008b0b",
@@ -17,11 +17,9 @@
   "adaptations": [
     "Own entry point and local language preference; no catalogue or parent-frame protocol.",
     "Optional recording is generated with the included recorder; absent recording mode is hidden.",
-    "Current research and dependency notices retained; publication infrastructure and prior releases omitted.",
     "Visible reflected room light; plane-parallel optics equations retained.",
     "Low closing returns and phase-matched serve boundary for the optional recorder.",
-    "GitLab Pages export of ready files, bilingual browser checks and restrained links to the original laboratory.",
-    "Public README rewritten around the game and reconstruction; direct laboratory/arcade links in both languages and report covers; dependency-free Node local server.",
-    "Repository audit: remove unrelated catalogue/publication QA logs; add direct schematic/source/patch navigation; correct reference-demo duration."
+    "Bilingual browser checks for the circuit, controller mechanics and glass optics.",
+    "Dependency-free Node local development server."
   ]
 }

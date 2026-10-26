@@ -1,0 +1,71 @@
+{
+  "profile": "0.3.1",
+  "basis": "BNL EH1-900-1-3 A, 1958-10-15",
+  "policy": "Changes below are declared working interpretations, not recovered undocumented corrections made in 1958.",
+  "items": [
+    {
+      "id": "C01",
+      "area": "Amplifiers and relays",
+      "status": "engineering macromodel",
+      "change": "Finite one-pole opamp; R-L coil; continuous pickup, armature and contacts. Numerical values are in model.json.",
+      "reason": "Detailed Donner 30 transfer data and original relay measurements are not available in the current evidence."
+    },
+    {
+      "id": "C02",
+      "area": "U8/U9 end detectors",
+      "status": "functional replacement",
+      "change": "Two clipped voltage comparators at X=+/-75 V, diode OR and relay coil.",
+      "reason": "Operating polarity is implemented symmetrically; the literal U8/U9 amplifier wiring remains to be transcribed."
+    },
+    {
+      "id": "C03",
+      "area": "U10/RY5 net gate",
+      "status": "deliberate functional addition",
+      "change": "RC edge detector responds to either change of centre relay, and gates inverted raw U2 into the net relay.",
+      "reason": "Allows symmetric net response in this declared profile; this is not evidence of a specific undocumented historical fix."
+    },
+    {
+      "id": "C04",
+      "area": "RY1/RY2 and stroke interlock",
+      "status": "functional replacement",
+      "change": "Behavioral comparisons drive capacitive bistables and relay coils. Reset has priority. One return becomes available after crossing above the net plane.",
+      "reason": "Provide a reviewable electrical control profile while remaining relay wiring is being reconstructed."
+    },
+    {
+      "id": "C05",
+      "area": "Controller and serve calibration",
+      "status": "open working calibration",
+      "change": "Linear linked knob voltages, G=-60 V, net height 20 V, start X=+/-62 V and raw Y=0 V.",
+      "reason": "Travel limits and serve X offset are explicit gameplay-profile choices; an archival equivalent is not asserted."
+    },
+    {
+      "id": "C06",
+      "area": "Input and numerical operation",
+      "status": "engineering implementation",
+      "change": "0.1ms RC input conditioning; shared adaptive Gear2, max step50us, operator sampling5ms; rolling voltage/coil checkpoints and safe Worker transfer.",
+      "reason": "Finite input transitions and bounded browser memory. Solver continuity is verified numerically."
+    },
+    {
+      "id": "C07",
+      "area": "Display and sound",
+      "status": "electrical reconstruction with optical macromodel and synthesized audio",
+      "change": "15-PNP switch directly loads the calculator; declared electrical scope drives a woscope-derived moving Gaussian/phosphor renderer. Web Audio contact clicks remain synthesized.",
+      "reason": "Input impedances and deflection scale have primary-document support. Scope amplifier/gun/phosphor parameters remain declared engineering choices; no measured original audio."
+    }
+  ],
+  "numerical_notes": [
+    {
+      "release": "0.5.0",
+      "change": "reltol=1e-5, abstol=1e-9, vntol=1e-6, chgtol=1e-12 C; same network and component values",
+      "reason": "A long variable-control CPU rally exposed transient timestep collapse with the former strict profile. A 3.2 s fixed-input comparison measured 0.304 mV maximum X/Y difference; full core and CPU checks were rerun.",
+      "historical_circuit_change": false
+    },
+    {
+      "release": "0.6.0",
+      "change": "Joint-profile reltol=1e-4, max step50us; actual accepted points, no live interp; safe fresh-Worker checkpoints.",
+      "reason": "Resolve transistor transitions and bound retained WASM heap. Native edge/settled comparisons and checkpoint timing are reported separately.",
+      "historical_circuit_change": false
+    }
+  ],
+  "release": "0.6.0"
+}

@@ -1,0 +1,56 @@
+{
+  "release": "0.8.3",
+  "dateUTC": "2026-10-25T14:01:58.877Z",
+  "scope": "Frozen local production app in cloud Chrome; new match, not an exact replay of the public failed session.",
+  "publicDeployment": false,
+  "M1FirefoxMeasured": false,
+  "checks": [
+    {
+      "name": "Release label, default-on glass and mechanics",
+      "passed": true,
+      "version": "0.8.3",
+      "glassDefaultOn": true,
+      "mechanicsDefaultOn": true
+    },
+    {
+      "name": "CPU match continues with glass enabled",
+      "passed": true,
+      "observedCircuitTime_s": 14.5
+    },
+    {
+      "name": "Glass and language toggles preserve paused time and knob positions",
+      "passed": true,
+      "before": {
+        "clock": "ВРЕМЯ СХЕМЫ 9.76 s",
+        "glass": "Оптика стекла: вкл",
+        "knobs": [
+          "48.3",
+          "47.2"
+        ]
+      },
+      "after": {
+        "clock": "CIRCUIT TIME 9.76 s",
+        "glass": "Glass optics: off",
+        "knobs": [
+          "48.3",
+          "47.2"
+        ]
+      }
+    },
+    {
+      "name": "Optics restored on and match resumed",
+      "passed": true
+    },
+    {
+      "name": "Application console errors during final QA window",
+      "passed": true,
+      "logWindowStart": "2026-10-25T13:57:49.277Z",
+      "errors": []
+    }
+  ],
+  "limits": [
+    "Cloud Chrome rather than M1/Firefox.",
+    "Earlier preview-stop console entries precede the final QA window.",
+    "No new hardware WebGL parity measurement."
+  ]
+}

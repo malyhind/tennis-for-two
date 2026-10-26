@@ -1,0 +1,11 @@
+{
+  "samePausedClock_s": 160.76,
+  "canvasPixels": [
+    502,
+    502
+  ],
+  "maxChannelDifference_8bit": 73.0,
+  "meanAbsoluteChannelDifference_8bit": 4.240885065316424,
+  "pixelsWithChannelDifferenceAbove10": 47656,
+  "method": "Two raw browser canvas screenshots of the same paused state; lighting2 on/off. JPEG quantization is included."
+}
