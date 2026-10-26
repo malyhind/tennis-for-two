@@ -8,7 +8,7 @@ This project recreates how that equipment worked. The ball's motion comes from a
 
 Part of the [Imperial School Laboratory](https://games.oopssre.ru/en/lab/) at the [Imperial School Arcade](https://games.oopssre.ru/).
 
-[Play in the browser](https://games.oopssre.ru/en/play/tennis-for-two/) · [Research and project materials](https://games.oopssre.ru/en/lab/tennis-for-two.html) · [Research PDF](app/docs/Gremlin_Tennis_Research_0.8.4.en.pdf)
+[Play in the browser](https://games.oopssre.ru/en/play/tennis-for-two/) · [Research on GitHub Pages](https://malyhind.github.io/tennis-for-two/app/docs/research.en.html) · [Laboratory materials](https://games.oopssre.ru/en/lab/tennis-for-two.html) · [Research PDF](app/docs/Gremlin_Tennis_Research_0.8.4.en.pdf)
 
 ## What is simulated
 
@@ -17,7 +17,7 @@ Part of the [Imperial School Laboratory](https://games.oopssre.ru/en/lab/) at th
 - **Mechanical controls.** Planck.js calculates knob inertia, friction and backlash, button travel, springs and contact closure. Mechanics and glass can be switched on and off.
 - **Players.** Play with another person, against a CPU, or watch Gremlin and Fox play. CPU players use the visible ball position and operate the ordinary controls above the circuit model.
 
-An optional recorded demo plays at real-time speed while the beam, phosphor and glass are rendered live. Recording and playback are described in the [demo documentation](app/docs/demo-mode.en.md).
+An optional recorded demo plays at real-time speed while the beam, phosphor and glass are rendered live. A ready looped recording is included; live simulation remains the default. Recording and playback are described in the [demo documentation](app/docs/demo-mode.en.md).
 
 ## Engineering changes
 
@@ -52,7 +52,9 @@ We document the adopted component models, inferred parameters and limits of the 
 
 ## Documentation
 
-- [Complete research and diagrams on the project site](https://games.oopssre.ru/en/lab/tennis-for-two.html).
+- [Complete research on GitHub Pages](https://malyhind.github.io/tennis-for-two/app/docs/research.en.html).
+- [Research and project materials on the Laboratory website](https://games.oopssre.ru/en/lab/tennis-for-two.html).
+- [Research text in the repository](app/docs/RESEARCH.en.md) and [schematics guide](app/docs/SCHEMATICS.en.md).
 - [Research PDF](app/docs/Gremlin_Tennis_Research_0.8.4.en.pdf), with diagrams, sources, measurements and stated assumptions.
 - [Reproducing the model and running checks](REPRODUCING.md).
 - [Numerical methods](app/docs/METHODS.en.md), [controller mechanics](app/docs/mechanics.en.md), and [glass optics](app/docs/glass-optics.en.md).

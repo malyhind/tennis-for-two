@@ -24,7 +24,7 @@ The supplied JS/WASM pair is ready to run over HTTP. CLI checks were executed wi
 | `npm run test:controller-worker` | CPU/controllers over the production Worker |
 | `npm run test:transactional-worker` | Rejected candidate recovery |
 | `npm run test:glass` | Snell/Fresnel and retained phosphor |
-| `npm run test:demo` | Synthetic clock/loop checks; recording checks after recording |
+| `npm run test:demo` | Clock, loops, hashes and bundled-recording compatibility |
 
 Serve the root over HTTP and open `tests/scope-check.en.html` for the browser display bench. Missing GPU features are reported as SKIP. This bench supplies the actual target-machine hardware check.
 
@@ -48,6 +48,6 @@ Each invocation uses a fresh directory under `.solver-build/`. The complete buil
 
 The three live control modes use the same electrical model. Circuit files are `app/tennis.cir`, `app/display-switch.cir` and `app/scope.cir`; `app/joint-circuit.js` builds the actual joined deck. `app/joint.cir` is a saved inspectable deck.
 
-`node tools/record-demo.mjs` generates an optional replay. By default it targets 30 seconds of rally time, then closes the loop; `DEMO_SECONDS` changes that target. It uses the production Worker, CPU profiles, Planck controls and lossless binary64 codec. Reload the page after generation. The recording duration is declared in its generated manifest; live play remains the default.
+A ready looped recording is included in `app/demo/`; Demo is immediately available and live simulation remains the default. `node tools/record-demo.mjs` generates another replay. By default it targets 30 seconds of rally time, then closes the loop; `DEMO_SECONDS` changes that target. It uses the production Worker, CPU profiles, Planck controls and lossless binary64 codec. Reload the page after replacing a recording. Each recording's duration is declared in its manifest.
 
 `python3 tools/study_supply_divider.py` repeats the separately declared static DC-divider calculation. The dated reports and research distinguish numerical reproducibility, reconstruction assumptions and historical evidence.

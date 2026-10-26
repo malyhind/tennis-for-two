@@ -1,6 +1,6 @@
 {
   "release": "0.8.4",
-  "dateUTC": "2026-10-25T18:06:22.934Z",
+  "dateUTC": "2026-10-26T12:31:20.294Z",
   "scope": "Lossless production recording, absolute-clock replay, loops, pause, path discontinuity and CPU cost. Native M1 and hardware WebGL are separate.",
   "tests": [
     {
@@ -24,15 +24,31 @@
       "passed": true
     },
     {
-      "name": "Recorded trace hashes and model compatibility",
-      "skipped": true,
-      "reason": "Optional recording is absent. Run node tools/record-demo.mjs, then repeat this test."
+      "name": "Bundled recording hashes and all original model files agree",
+      "passed": true
     },
     {
-      "name": "Recorded trace CPU budget",
-      "skipped": true,
-      "reason": "Optional recording is absent. Run node tools/record-demo.mjs, then repeat this test."
+      "name": "Recorded beam is presented with live CPU optics within a measured budget",
+      "passed": true
     }
   ],
-  "metrics": {}
+  "metrics": {
+    "recording": {
+      "duration_s": 15.16667425838705,
+      "hits": 10,
+      "rows": 1034219,
+      "compressedBytes": 21907069,
+      "lossless": true,
+      "loopGap_s": 0.000049999999998107114
+    },
+    "cpuFallback": {
+      "size": 128,
+      "presentationHz": 20,
+      "simulated_s": 0.550280263744195,
+      "wall_ms": 598.3880139999999,
+      "wallPerSimulatedSecond": 1.0874240880973487,
+      "host": "Linux/Node, not M1/Firefox or a browser FPS result",
+      "packets": 11
+    }
+  }
 }

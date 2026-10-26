@@ -1,7 +1,7 @@
 {
   "version": "0.8.4",
   "edition": "standalone-source",
-  "revision": 5,
+  "revision": 6,
   "derivedFrom": "a88bfc8359a76bd22bed7391f91cbd20fc70bf81",
   "physicalModelSHA256": {
     "joint-circuit.js": "6946fac642249518bf03ec02124ee031dc0eafa81786f104f564c58967008b0b",
@@ -16,7 +16,7 @@
   },
   "adaptations": [
     "Own entry point and local language preference; no catalogue or parent-frame protocol.",
-    "Optional recording is generated with the included recorder; absent recording mode is hidden.",
+    "Ready looped demo recording is bundled, with its recorder, codec and player; live simulation remains the default.",
     "Visible reflected room light; plane-parallel optics equations retained.",
     "Low closing returns and phase-matched serve boundary for the optional recorder.",
     "Bilingual browser checks for the circuit, controller mechanics and glass optics.",

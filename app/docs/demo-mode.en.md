@@ -1,6 +1,6 @@
 # Demo: recorded simulation at 1.00×
 
-Demo is an additional mode, off by default. Once a recording is prepared, one recorded second takes one real second. The standalone source includes its recorder, codec and player. Generate optional data with `node tools/record-demo.mjs`; reload the page to make Demo available.
+Demo is an additional mode, off by default. A ready looped recording is included and available in the mode selector. One recorded second takes one real second. The project also includes its recorder, codec and player; `node tools/record-demo.mjs` can generate another match.
 
 ## Calculated in advance
 
@@ -24,7 +24,7 @@ The boundary matches the serve position and controller settings. A path break pr
 
 ## Validation and reproduction
 
-`node tests/verify-demo.mjs` checks lossless binary64, tempo at 30/60/144 Hz, irregular frame delivery, pause/reset and a path break retaining phosphor. Recorded-trace validation and its rendering cost run after data generation; absent data is explicitly SKIP. Ready-made WASM supports immediate use; numerical-core source and patches support rebuilding.
+`node tests/verify-demo.mjs` checks lossless binary64, tempo at 30/60/144 Hz, irregular frame delivery, pause/reset and a path break retaining phosphor. It verifies the included recording's hashes, source-model compatibility and rendering cost. If the recording is deliberately removed, its checks are explicitly SKIP. Ready-made WASM supports immediate use; numerical-core source and patches support rebuilding.
 
 Each recording is separately checked for the final rally height, endpoint coordinates, control positions and phosphor images around the seam. Playback rate and continuous electrical-solver speed are different measurements.
 
