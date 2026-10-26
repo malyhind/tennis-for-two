@@ -1,9 +1,10 @@
 import {GPUPhosphor} from '../app/phosphor-webgl.js';
 import {CPUPhosphor} from '../app/phosphor-cpu.js';
 import {ScopeRenderer} from '../app/scope-renderer.js';
+const en=document.documentElement.lang==='en';
 const status=document.querySelector('#status'),out=document.querySelector('#json');
 document.querySelector('#run').onclick=async()=>{
- document.querySelector('#run').disabled=true;status.textContent='Сравниваем численные результаты…';
+ document.querySelector('#run').disabled=true;status.textContent=en?'Comparing numerical results…':'Сравниваем численные результаты…';
  const report={date:new Date().toISOString(),userAgent:navigator.userAgent,tests:[],measurements:{}};
  const test=async(name,fn)=>{try{const value=await fn();report.tests.push({name,...(value?.skipped?{}:{passed:true}),...value});}catch(e){report.tests.push({name,passed:false,error:String(e.stack||e)});}out.textContent=JSON.stringify(report,null,2);};
  let gpu,cpu;
@@ -65,6 +66,7 @@ document.querySelector('#run').onclick=async()=>{
    const r={enabled,maxByteDifference:max,rmsByteDifference:Math.sqrt(squared/count)};if(max>5||r.rmsByteDifference>.5)throw Error(JSON.stringify(r));results.push(r);
   }return {results};
  });
- const failed=report.tests.filter(t=>t.passed===false).length;status.textContent=failed?`Ошибок: ${failed}`:`Пройдено ${report.tests.filter(t=>t.passed).length}; пропущено ${report.tests.filter(t=>t.skipped).length}`;
+ const failed=report.tests.filter(t=>t.passed===false).length;status.textContent=en?(failed?`Failed: ${failed}`:`Passed: ${report.tests.filter(t=>t.passed).length}; skipped: ${report.tests.filter(t=>t.skipped).length}`):(failed?`Ошибок: ${failed}`:`Пройдено ${report.tests.filter(t=>t.passed).length}; пропущено ${report.tests.filter(t=>t.skipped).length}`);
+ gpu?.dispose();
  out.textContent=JSON.stringify(report,null,2);document.querySelector('details').open=true;document.querySelector('#run').disabled=false;
 };

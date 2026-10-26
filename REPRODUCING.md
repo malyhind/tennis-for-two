@@ -2,6 +2,8 @@
 
 # Reproduce the instrument
 
+[Imperial School Laboratory](https://games.oopssre.ru/en/lab/) · [Imperial School Arcade](https://games.oopssre.ru/)
+
 ## Runtime and tests
 
 The supplied JS/WASM pair is ready to run over HTTP. CLI checks were executed with Node.js 24.22.1. Use the named scripts in package.json:
@@ -24,7 +26,7 @@ The supplied JS/WASM pair is ready to run over HTTP. CLI checks were executed wi
 | `npm run test:glass` | Snell/Fresnel and retained phosphor |
 | `npm run test:demo` | Synthetic clock/loop checks; recording checks after recording |
 
-Serve the root over HTTP and open `tests/scope-check.html` for the browser display bench. Missing GPU features are reported as SKIP. This bench supplies the actual target-machine hardware check.
+Serve the root over HTTP and open `tests/scope-check.en.html` for the browser display bench. Missing GPU features are reported as SKIP. This bench supplies the actual target-machine hardware check.
 
 Tests update individual JSON reports in `app/docs/` and may create `tests/results/`. The initial reports preserve their measured dates and scenario scope. Native comparisons require ngspice 45.2; specify `NGSPICE=/path/to/ngspice`. The cold-start native comparison has known transition/initial-branch differences; its failing strict pointwise criterion is retained. A common-state continuation is a separate test, not a replacement for the cold-start case. See the research for thresholds and excluded windows.
 
@@ -46,6 +48,6 @@ Each invocation uses a fresh directory under `.solver-build/`. The complete buil
 
 The three live control modes use the same electrical model. Circuit files are `app/tennis.cir`, `app/display-switch.cir` and `app/scope.cir`; `app/joint-circuit.js` builds the actual joined deck. `app/joint.cir` is a saved inspectable deck.
 
-`node tools/record-demo.mjs` generates the optional thirty-second replay. It uses the production Worker, CPU profiles, Planck controls and lossless binary64 codec. Reload the page after generation. The source packager always omits generated replay data and emits an unavailable-recording manifest; live play remains the default.
+`node tools/record-demo.mjs` generates an optional replay. By default it targets 30 seconds of rally time, then closes the loop; `DEMO_SECONDS` changes that target. It uses the production Worker, CPU profiles, Planck controls and lossless binary64 codec. Reload the page after generation. The recording duration is declared in its generated manifest; live play remains the default.
 
 `python3 tools/study_supply_divider.py` repeats the separately declared static DC-divider calculation. The dated reports and research distinguish numerical reproducibility, reconstruction assumptions and historical evidence.

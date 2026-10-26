@@ -5,6 +5,7 @@
   "type": "module",
   "description": "A declared Tennis for Two circuit reconstruction evaluated by ngspice in a browser worker",
   "scripts": {
+    "start": "node tools/serve.mjs",
     "test": "node tests/verify.mjs",
     "test:display": "node tests/verify-display.mjs",
     "benchmark:display": "node tests/benchmark-display.mjs",
@@ -23,7 +24,8 @@
     "test:demo": "node tests/verify-demo.mjs",
     "record:demo": "node tools/record-demo.mjs",
     "docs": "python3 tools/build_research.py",
-    "test:documents": "python3 tests/verify-documents.py"
+    "test:documents": "python3 tests/verify-documents.py",
+    "pages": "python3 tools/build-pages.py"
   },
   "license": "MIT"
 }

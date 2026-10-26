@@ -18,7 +18,7 @@ The reconstruction follows surviving documentation, with declared equivalents wh
 
 Numerical differences describe the chosen model and test scenarios. Component assumptions and historical interpretation are recorded separately.
 
-The optional Demo mode additionally replays a lossless thirty-second circuit/operator/control recording at 1.00x real time. Its screen and glass remain calculated in the browser. Demo is off by default; the three game modes retain live electrical simulation. The recording and timing checks are documented in the Demo appendix.
+The optional Demo mode replays a lossless circuit/operator/control recording at 1.00× real time. The published reference loop is 15.166674 seconds; each recording declares its own duration in its manifest. Its screen and glass remain calculated in the browser. Demo is off by default; the three game modes retain live electrical simulation. The recording and timing checks are documented in the Demo appendix.
 
 ## 2. Historical basis
 

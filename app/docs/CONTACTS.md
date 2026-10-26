@@ -4,7 +4,7 @@
 Разработка и исследование Tennis for Two в диалоге с ChatGPT (OpenAI).
 
 - [Сайт «Инженер школы Империи»](https://oopssre.ru)
-- [Аркадный зал](https://games.oopssre.ru)
+- [Аркадный зал Школы Империи](https://games.oopssre.ru/)
 - [Лаборатория Школы Империи](https://games.oopssre.ru/lab/)
 - [Tennis for Two: исследование и материалы](https://games.oopssre.ru/lab/tennis-for-two.html)
 - [Запустить Tennis for Two](https://games.oopssre.ru/play/tennis-for-two/)

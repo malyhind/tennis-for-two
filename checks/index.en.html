@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tennis for Two · Checks and benches</title>
+<meta name="description" content="Play, research, circuits and browser checks for the Tennis for Two reconstruction.">
+<link rel="icon" href="../app/icons/tennis.svg" type="image/svg+xml"><link rel="stylesheet" href="checks.css"></head>
+<body><main><header><a href="https://games.oopssre.ru/lab/">IMPERIAL SCHOOL LABORATORY</a><nav aria-label="Project and language"><a data-repository hidden>Source code</a><a href="index.html" lang="ru" hreflang="ru">RU</a><a href="index.en.html" lang="en" hreflang="en">EN</a></nav></header>
+<h1>Check Tennis for Two</h1><p>Open the instrument, inspect the circuit or check the model on your device. Bench calculations run in your browser.</p>
+<section class="grid" aria-label="Materials and benches">
+<article class="card"><h2>Instrument</h2><p>Continuous electrical simulation, mechanical controls, beam and glass.</p><a href="../index.html?lang=en">Play →</a></article>
+<article class="card"><h2>Electronic bench</h2><p>15 transistors: voltages, switching, X–Y output, CSV and SPICE export.</p><a href="../app/display-bench.en.html">Run circuit →</a></article>
+<article class="card"><h2>Screen and glass</h2><p>CPU/WebGL comparison, phosphor, optics and CPU fallback after context loss.</p><a href="../tests/scope-check.en.html">Check display →</a></article>
+<article class="card"><h2>Research</h2><p><a href="../app/docs/research.en.html">Full report, schematics and sources</a></p><p><a href="../app/docs/Gremlin_Tennis_Research_0.8.4.en.pdf">Research · PDF</a> · <a href="../app/docs/reuse-audit.en.html">Attribution and reuse</a></p></article></section>
+<section aria-labelledby="runtime-title"><h2 id="runtime-title">Check your device</h2>
+<p>Checks WASM loading, mechanics, preservation of phosphor excitation when toggling glass, and continuous circuit simulation with CPU players. A longer run can expose failures after several seconds of play.</p>
+<div class="actions"><label for="duration">Game time</label><select id="duration"><option value="0.25">0.25 s</option><option value="1">1 s</option><option value="8">8 s</option></select><button id="run" type="button">Run checks</button><button id="stop" type="button" hidden>Stop</button><a id="save" download="tennis-browser-check.json" hidden>Download result · JSON</a></div>
+<p id="status" role="status" aria-live="polite">Ready. Calculations start only when you press Run.</p>
+<p class="muted">Tempo 1 means one circuit second per second spent in solver calls; 0.6 means about 1.67 solver seconds per circuit second. This measures worker calls and state transfers, separately from WASM startup, mechanics and display rendering. This is a model smoke check, not the complete numerical suite or calibration against original hardware.</p>
+<details><summary>Full result</summary><pre id="report">{}</pre></details></section>
+<footer><span>Dmitry Malykhin / Gremlin · with ChatGPT</span><a href="https://oopssre.ru">oopssre.ru</a><a href="https://t.me/oopsSRE">@oopsSRE</a><a href="../app/docs/contacts.en.html">Author and contact</a><a href="../LICENSE">MIT</a></footer>
+</main><script type="module" src="runtime-check.js"></script><script type="module" src="publication-links.js"></script></body></html>

@@ -2,7 +2,9 @@
 
 # Provenance, authors and reuse
 
-Version 0.8.1. Inventory checked on 25 October 2026.
+[Imperial School Laboratory](https://games.oopssre.ru/en/lab/) · [Imperial School Arcade](https://games.oopssre.ru/)
+
+Version 0.8.4. Dependency inventory checked on 25 October 2026.
 
 Our code, circuit descriptions and explanatory writing use MIT. External source retains its original licenses. The project’s MIT license does not relicense ngspice, manufacturer documents, archival drawings or papers.
 

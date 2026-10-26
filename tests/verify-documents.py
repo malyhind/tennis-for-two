@@ -32,7 +32,9 @@ class Page(HTMLParser):
 def verify():
     result = {'htmlPages': 0, 'localLinks': 0, 'markdownDocuments': 0,
               'markdownLocalLinks': 0, 'pdfs': []}
-    paths = sorted((ROOT / 'app').rglob('*.html')) + sorted(ROOT.glob('*.html'))
+    paths = (sorted((ROOT / 'app').rglob('*.html')) + sorted(ROOT.glob('*.html'))
+             + sorted((ROOT / 'checks').glob('*.html'))
+             + sorted((ROOT / 'tests').glob('scope-check*.html')))
     for path in paths:
         page = Page(path)
         assert len(page.ids) == len(set(page.ids)), f'Duplicate ID: {path.name}'

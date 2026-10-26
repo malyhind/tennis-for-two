@@ -19,7 +19,7 @@ EMPTY_RECORDING = {
 def included(path):
     rel = path.relative_to(ROOT)
     return (path.is_file()
-            and not any(p in {'.git', '.solver-build', '__pycache__', 'node_modules', '.openai'} for p in rel.parts)
+            and not any(p in {'.git', '.solver-build', '__pycache__', 'node_modules', '.openai', 'public'} for p in rel.parts)
             and (rel.parts[:2] != ('tests', 'results') or rel.name == '.gitkeep')
             and not (rel.parts[:2] == ('app', 'demo') and rel.name != 'manifest.json')
             and rel.name not in {'PACKAGE.json', 'SHA256SUMS', 'PROJECT.md', 'PROJECT.en.md'}
@@ -40,7 +40,7 @@ def main():
     paths = sorted(p for p in ROOT.rglob('*') if included(p))
     rows = [{'path': p.relative_to(ROOT).as_posix(), 'bytes': len(b),
              'sha256': hashlib.sha256(b).hexdigest()} for p in paths for b in [payload(p)]]
-    manifest = {'release': VERSION, 'edition': 'standalone-source', 'revision': 2,
+    manifest = {'release': VERSION, 'edition': 'standalone-source', 'revision': 5,
                 'optionalRecordingIncluded': False, 'files': rows}
     prefix = 'tennis-for-two/'
     with tempfile.NamedTemporaryFile(dir=args.output.parent, suffix='.zip', delete=False) as handle:
