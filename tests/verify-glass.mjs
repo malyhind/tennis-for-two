@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto';
 import {GLASS_MODEL,GlassProjection,faceplateRay,fresnel} from '../app/glass-optics.js';
 import {CPUPhosphor} from '../app/phosphor-cpu.js';
 import {CRT,displayColor} from '../app/beam-model.js';
-const root=new URL('../',import.meta.url),report={release:'0.8.4',dateUTC:new Date().toISOString(),scope:'Declared plane-parallel faceplate, presentation invariance, sensitivity and Linux/Node timing. Not original-glass metrology or hardware GPU verification.',tests:[],metrics:{}};
+const root=new URL('../',import.meta.url),report={release:'0.8.5',dateUTC:new Date().toISOString(),scope:'Declared plane-parallel faceplate, presentation invariance, sensitivity and Linux/Node timing. Not original-glass metrology or hardware GPU verification.',tests:[],metrics:{}};
 const test=async(name,fn)=>{try{await fn();report.tests.push({name,passed:true});console.log('PASS',name);}catch(e){report.tests.push({name,passed:false,error:String(e.stack)});console.error('FAIL',name,e.message);}};
 const near=(a,b,t=1e-12)=>assert.ok(Math.abs(a-b)<=t,`${a} versus ${b}`);
 await test('Normal-incidence Fresnel and Snell match closed forms',()=>{

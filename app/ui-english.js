@@ -26,7 +26,7 @@ export const EN=Object.freeze({
   'И ТО, КАК ОНИ РАБОТАЛИ.':'AND HOW THEY WORKED.',
   'Прибор 001 / Брукхейвен, 1958':'Instrument 001 / Brookhaven, 1958',
   'Два игрока. Две ручки. Один светящийся мяч.':'Two players. Two knobs. One glowing ball.',
-  'ЕДИНЫЙ ПРИБОР · 0.8.4':'ONE CIRCUIT · 0.8.4',
+  'ЕДИНЫЙ ПРИБОР · 0.8.5':'ONE CIRCUIT · 0.8.5',
   'Прибор Tennis for Two':'Tennis for Two instrument',
   'TENNIS PROGRAMMING / МОДЕЛЬ 01':'TENNIS PROGRAMMING / MODEL 01',
   'Режим':'Mode','Режим игры':'Game mode',

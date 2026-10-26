@@ -1,7 +1,7 @@
 {
-  "version": "0.8.4",
+  "version": "0.8.5",
   "edition": "standalone-source",
-  "revision": 6,
+  "revision": 7,
   "derivedFrom": "a88bfc8359a76bd22bed7391f91cbd20fc70bf81",
   "physicalModelSHA256": {
     "joint-circuit.js": "6946fac642249518bf03ec02124ee031dc0eafa81786f104f564c58967008b0b",

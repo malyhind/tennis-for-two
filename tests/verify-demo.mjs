@@ -7,7 +7,7 @@ import {encodeBeam,decodeBeam} from '../app/demo-codec.js';
 import {CPUPhosphor} from '../app/phosphor-cpu.js';
 import {ScopeRenderer} from '../app/scope-renderer.js';
 import {CRT} from '../app/beam-model.js';
-const report={release:'0.8.4',dateUTC:new Date().toISOString(),scope:'Lossless production recording, absolute-clock replay, loops, pause, path discontinuity and CPU cost. Native M1 and hardware WebGL are separate.',tests:[],metrics:{}};
+const report={release:'0.8.5',dateUTC:new Date().toISOString(),scope:'Lossless production recording, absolute-clock replay, loops, pause, path discontinuity and CPU cost. Native M1 and hardware WebGL are separate.',tests:[],metrics:{}};
 let failures=0;
 async function test(name,fn){try{const result=await fn();report.tests.push({name,passed:true,...result});console.log('PASS',name);}catch(error){failures++;report.tests.push({name,passed:false,error:String(error.stack)});console.error('FAIL',name,error);}}
 const hash=x=>createHash('sha256').update(x).digest('hex');
