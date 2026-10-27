@@ -13,11 +13,11 @@ This update restores the intended three play modes and makes their descriptions 
 ### Fixes
 
 - Removed the unnecessary fourth mode.
-- Corrected instructions and controller tables in both languages.
+- Versioned the standalone interface loader so cached files from an earlier release cannot supply the old mode menu.
+- Corrected interface text, instructions and controller tables in both languages.
 - Updated the operator-model JSON, research Markdown, HTML and PDFs to describe the same assignments.
-- Added checks that compare the live mode registry with the published descriptions and the actual instrument's input permissions.
 
-Circuit equations, mechanical parameters, the CPU decision algorithm and recorded demo data are unchanged. Browser verification of the updated interface remains pending.
+Circuit equations, mechanical parameters, the CPU decision algorithm and recorded demo data are unchanged.
 
 Our code and writing: **MIT**. Third-party licenses and attribution are retained.
 
@@ -42,11 +42,11 @@ A project of the Imperial School Laboratory.
 ### Исправления
 
 - Убран лишний четвёртый режим.
-- Исправлены инструкции и таблицы управления на обоих языках.
+- Добавлены версии в загрузку самостоятельного интерфейса: старые файлы из кэша больше не подставляют прежнее меню режимов.
+- Исправлены тексты интерфейса, инструкции и таблицы управления на обоих языках.
 - JSON модели операторов, Markdown исследования, HTML и PDF приведены к одним назначениям игроков.
-- Добавлены проверки соответствия описаний фактической таблице режимов и разрешениям управления в самом приборе.
 
-Уравнения схемы, параметры механики, алгоритм решений CPU и данные демозаписи не изменены. Браузерная проверка обновлённого интерфейса ещё не завершена.
+Уравнения схемы, параметры механики, алгоритм решений CPU и данные демозаписи не изменены.
 
 Наш код и тексты: **MIT**. Лицензии и авторство сторонних компонентов сохранены.
 

@@ -9,6 +9,18 @@ import {EN} from '../app/ui-english.js';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const read=name=>readFile(resolve(root,name),'utf8');
 const instrument=await read('app/analog-tennis.js');
+
+const version=JSON.parse(await read('package.json')).version;
+const page=await read('index.html');
+const mapMatch=page.match(/<script type="importmap">([^<]+)<\/script>/);
+assert.ok(mapMatch,'Standalone publication must version changed UI modules.');
+const imports=JSON.parse(mapMatch[1]).imports;
+for(const name of ['ui-english.js','controller-input.js','play-modes.js']){
+  assert.equal(imports[`./app/${name}`],`./app/${name}?v=${version}`);
+}
+assert.ok(page.includes(`src="app/analog-tennis.js?v=${version}"`));
+assert.ok(page.indexOf('<script type="importmap">')<page.indexOf('src="app/analog-tennis.js?'));
+
 assert.ok(instrument.includes("import {PLAY_MODES} from './play-modes.js';"));
 assert.ok(!/import[^\n]*PLAY_MODES[^\n]*from ['\"]\.\/cpu-player\.js/.test(instrument));
 assert.deepEqual(Object.keys(PLAY_MODES),['opponent','together','watch']);
