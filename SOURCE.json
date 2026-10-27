@@ -1,7 +1,7 @@
 {
-  "version": "0.8.6",
+  "version": "0.8.7",
   "edition": "standalone-source",
-  "revision": 8,
+  "revision": 9,
   "derivedFrom": "ff09fc6816556aa6ae30a92c6fa8f1c6f7738c7a",
   "physicalModelSHA256": {
     "joint-circuit.js": "6946fac642249518bf03ec02124ee031dc0eafa81786f104f564c58967008b0b",
@@ -21,6 +21,6 @@
     "Low closing returns and phase-matched serve boundary for the optional recorder.",
     "Bilingual browser checks for the circuit, controller mechanics and glass optics.",
     "Dependency-free Node local development server.",
-    "Pointer input handles centre drags, capture ownership and rapid release; Me and Fox uses a CPU, with a separate Two players mode. UI modes are separate from the unchanged recorded operator model."
+    "Original three modes: two humans, human versus Fox CPU, and Gremlin versus Fox CPU. The instrument reads its UI mode assignments from play-modes.js; simulation and recorded source files are unchanged."
   ]
 }

@@ -84,6 +84,15 @@ def verify():
             assert '../vendor/planck/' + name in audit.links
 
         pdf = PdfReader(DOCS / ('Gremlin_Tennis_Research_0.8.4' + suffix + '.pdf'))
+        full_text = re.sub(r'\s+', ' ', ' '.join(page.extract_text() or '' for page in pdf.pages))
+        expected_roles = ('Me and Fox: a person on the left, the Fox CPU on the right.',
+                          'Me and Opponent: two people') if suffix else (
+                          '«Я и Лиса»: человек слева, компьютерная Лиса справа.',
+                          '«Я и Противник»: два человека')
+        for role in expected_roles:
+            assert role in full_text, (suffix, 'Incorrect mode description', role)
+        assert not re.search(r'«Я и Лиса»:\s*два человека|Me and Fox:\s*two people', full_text)
+
         page_ids = {p.indirect_reference.idnum: i for i, p in enumerate(pdf.pages)}
         internal, resources, planck_targets = 0, 0, set()
         mechanical_pages = {}

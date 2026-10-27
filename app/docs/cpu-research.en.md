@@ -4,8 +4,8 @@ Automatic-operator model, primary studies and transfer assumptions. Sources and 
 
 ## Three modes
 
-- Me and Fox: two people, two controllers.
-- Me and Opponent: a person on the left, CPU on the right.
+- Me and Fox: a person on the left, the Fox CPU on the right.
+- Me and Opponent: two people; both controllers accept mouse and keyboard input.
 - Gremlin vs Fox: two automatic operators; the observer can pause the instrument.
 
 The CPU sits above the circuit and changes the ordinary knob and hit button. Humans and CPUs share the same inputs. Knob movement and presses are visible. SPICE calculates motion, bounces and interlocks.

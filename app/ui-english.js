@@ -1,8 +1,6 @@
 export const EN=Object.freeze({
-  'Два игрока':'Two players','Второй игрок':'Player 2',
-  'Вы играете слева. Противник справа управляется компьютером.':'You play on the left. The opponent on the right is computer controlled.',
-  'Вы играете слева. Лиса справа играет сама.':'You play on the left. Fox on the right plays automatically.',
-  'Два человека: левый пульт — A/D и W, правый — стрелки. Обе ручки доступны мышью.':'Two people: A/D and W for the left controller, arrow keys for the right. Both knobs can be dragged.',
+  'Два человека: вы играете слева, противник — справа. Оба пульта доступны мышью и клавиатурой.':'Two people: you play on the left and the other player on the right. Both controllers accept mouse and keyboard input.',
+  'Вы играете слева. Лиса справа управляется компьютером.':'You play on the left. Fox on the right is computer controlled.',
   'Оба пульта управляются компьютером. Можно смотреть розыгрыш.':'Both controllers are computer controlled. Watch the rally.',
   'Зажмите ручку: тяните вверх/вниз или влево/вправо за центр либо вращайте по краю. Затем нажмите «Удар».':'Drag the centre up/down or left/right, or rotate around the rim. Then press Hit.',
 
@@ -33,7 +31,7 @@ export const EN=Object.freeze({
   'И ТО, КАК ОНИ РАБОТАЛИ.':'AND HOW THEY WORKED.',
   'Прибор 001 / Брукхейвен, 1958':'Instrument 001 / Brookhaven, 1958',
   'Два игрока. Две ручки. Один светящийся мяч.':'Two players. Two knobs. One glowing ball.',
-  'ЕДИНЫЙ ПРИБОР · 0.8.6':'ONE CIRCUIT · 0.8.6',
+  'ЕДИНЫЙ ПРИБОР · 0.8.7':'ONE CIRCUIT · 0.8.7',
   'Прибор Tennis for Two':'Tennis for Two instrument',
   'TENNIS PROGRAMMING / МОДЕЛЬ 01':'TENNIS PROGRAMMING / MODEL 01',
   'Режим':'Mode','Режим игры':'Game mode',

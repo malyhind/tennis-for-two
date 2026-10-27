@@ -10,7 +10,7 @@ Part of the [Imperial School Laboratory](https://games.oopssre.ru/en/lab/) at th
 
 [Play in the browser](https://games.oopssre.ru/en/play/tennis-for-two/) · [Research on GitHub Pages](https://malyhind.github.io/tennis-for-two/app/docs/research.en.html) · [Laboratory materials](https://games.oopssre.ru/en/lab/tennis-for-two.html) · [Research PDF](app/docs/Gremlin_Tennis_Research_0.8.4.en.pdf)
 
-Release **0.8.6** improves knob and button input. **Me and Fox** now uses an automatic Fox player; **Two players** gives both controllers to people. The looped demo and complete bilingual research are included. See [release notes](RELEASE.md).
+Release **0.8.7** improves knob and button input. **Me and Opponent** gives both controllers to people; **Me and Fox** uses an automatic Fox player. The looped demo and complete bilingual research are included. See [release notes](RELEASE.md).
 
 ## What is simulated
 
@@ -77,6 +77,8 @@ Open **http://127.0.0.1:8080/**. The command serves the ready HTML, JavaScript a
 The same files can be served by a static web host. Local development requires HTTP so that the browser can load ES modules, workers and WASM.
 
 ## Development and checks
+
+The instrument reads its play-mode assignments from `app/play-modes.js`.
 
 `app/` contains the browser code, SPICE circuits and dependencies. `tests/` contains the numerical and browser checks. `tools/` contains supporting development utilities.
 

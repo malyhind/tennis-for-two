@@ -11,7 +11,7 @@ await test('Only visible observations reach the operator',()=>{
   const allowed=new Set(['time','x','y','mode','can','server']);
   const state=new Proxy({time:1,x:12,y:30,mode:1,can:[false,true],server:0},{get:(o,k)=>{assert.ok(allowed.has(k),'Privileged state: '+k);return o[k];}});
   assert.deepEqual(operatorView(state,1),{time:1,x:12,y:30,playing:true,ready:true,server:0});
-  assert.deepEqual(PLAY_MODES.together.cpu,[null,'fox']);assert.deepEqual(PLAY_MODES.local.cpu,[null,null]);assert.deepEqual(PLAY_MODES.opponent.cpu,[null,'opponent']);assert.deepEqual(PLAY_MODES.watch.cpu,['gremlin','fox']);
+  assert.deepEqual(PLAY_MODES.together.cpu,[null,'fox']);assert.deepEqual(PLAY_MODES.opponent.cpu,[null,null]);assert.equal(Object.keys(PLAY_MODES).length,3);assert.deepEqual(PLAY_MODES.watch.cpu,['gremlin','fox']);
 });
 await test('A new visible opportunity cannot produce an immediate hit',()=>{
   const a=new CPUPlayer(1,'opponent',{random:()=>0});let first=null;

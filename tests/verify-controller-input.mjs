@@ -87,8 +87,8 @@ test('Keyboard slider input preserves limits and Page/Home/End controls',()=>{
   const f=fixture();f.dial.onkeydown(key('PageUp'));assert.equal(f.value,60);f.dial.onkeydown(key('Home'));assert.equal(f.value,0);
   f.dial.onkeydown(key('ArrowLeft'));assert.equal(f.value,0);f.dial.onkeydown(key('End'));assert.equal(f.value,100);
 });
-test('Me and Fox selects a CPU; the explicit local mode has two human controllers',()=>{
-  assert.deepEqual(PLAY_MODES.together.cpu,[null,'fox']);assert.deepEqual(PLAY_MODES.local.cpu,[null,null]);
+test('Original three modes assign human controls and Fox CPU correctly',()=>{
+  assert.deepEqual(Object.keys(PLAY_MODES),['opponent','together','watch']);assert.deepEqual(PLAY_MODES.together.cpu,[null,'fox']);assert.deepEqual(PLAY_MODES.opponent.cpu,[null,null]);
   for(const mode of Object.values(PLAY_MODES)){assert.ok(EN[mode.label]);assert.ok(EN[mode.description]);}
 });
 
@@ -101,9 +101,22 @@ globalThis.document={documentElement:{lang:'ru'}};
 globalThis.window={addEventListener(){}};
 globalThis.requestAnimationFrame=()=>1;
 const {AnalogTennis}=await import('../app/analog-tennis.js');
+test('The actual instrument enables both human controllers and assigns only Fox in Me and Fox',()=>{
+  for(const mode of Object.keys(PLAY_MODES)){
+    const game=Object.create(AnalogTennis.prototype);
+    Object.assign(game,{playMode:mode,paused:false,modeLoading:false,
+      engine:{error:null,getControl:()=>.65,getTime:()=>0},renderOperatorLabels(){},updateModeControls(){}});
+    game.configureOperators();
+    for(let side=0;side<2;side++){
+      assert.equal(game.operators[side]?.persona??null,PLAY_MODES[mode].cpu[side]);
+      assert.equal(game.canOperate(side),PLAY_MODES[mode].cpu[side]===null);
+      assert.equal(game.canOperate(side,true),PLAY_MODES[mode].cpu[side]!==null);
+    }
+  }
+});
 test('A drag released between two frames reaches the actual mechanical model',()=>{
   const game=Object.create(AnalogTennis.prototype);
-  Object.assign(game,{isConnected:true,lastFrame:1000,playMode:'local',paused:false,operators:[null,null],
+  Object.assign(game,{isConnected:true,lastFrame:1000,playMode:'opponent',paused:false,operators:[null,null],
     mechanics:[new ControllerMechanics({control:.5}),new ControllerMechanics({control:.5})],pendingKnobReleases:new Set([0]),
     engine:{error:null,advance(){},popEvents(){return 0;},drainSamples(){return [];},drainBeams(){return [];}},
     writeControls(){},flushContacts(){},renderState(){},scope:{},audio:{},tickHandler(){}});

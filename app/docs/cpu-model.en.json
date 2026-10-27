@@ -1,5 +1,5 @@
 {
-  "release": "0.5.0",
+  "release": "0.8.7",
   "status": "Our operator model, inspired by research; not validated against human players",
   "modes": {
     "opponent": {
@@ -10,7 +10,7 @@
       ],
       "cpu": [
         null,
-        "opponent"
+        null
       ]
     },
     "together": {
@@ -21,7 +21,7 @@
       ],
       "cpu": [
         null,
-        null
+        "fox"
       ]
     },
     "watch": {
