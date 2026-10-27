@@ -1,6 +1,6 @@
 {
   "name": "tennis-for-two-reconstruction",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "private": true,
   "type": "module",
   "description": "A declared Tennis for Two circuit reconstruction evaluated by ngspice in a browser worker",
@@ -25,7 +25,8 @@
     "record:demo": "node tools/record-demo.mjs",
     "docs": "python3 tools/build_research.py",
     "test:documents": "python3 tests/verify-documents.py",
-    "pages": "python3 tools/build-pages.py"
+    "pages": "python3 tools/build-pages.py",
+    "test:controller-input": "node tests/verify-controller-input.mjs"
   },
   "license": "MIT"
 }

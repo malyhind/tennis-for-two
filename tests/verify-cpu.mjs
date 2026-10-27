@@ -1,7 +1,8 @@
+import {PLAY_MODES} from '../app/play-modes.js';
 import assert from 'node:assert/strict';
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {CPUPlayer,PLAY_MODES,CPU_PROFILES,motorDuration,operatorView} from '../app/cpu-player.js';
+import {CPUPlayer,CPU_PROFILES,motorDuration,operatorView} from '../app/cpu-player.js';
 import {TennisCircuit} from '../app/circuit.js';
 const root=new URL('../',import.meta.url),report={release:'0.5.0',date:new Date().toISOString(),scope:'Optional operator behavior and circuit integration; not human-subject validation.',tests:[],metrics:{}};
 const seeded=seed=>()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
@@ -10,7 +11,7 @@ await test('Only visible observations reach the operator',()=>{
   const allowed=new Set(['time','x','y','mode','can','server']);
   const state=new Proxy({time:1,x:12,y:30,mode:1,can:[false,true],server:0},{get:(o,k)=>{assert.ok(allowed.has(k),'Privileged state: '+k);return o[k];}});
   assert.deepEqual(operatorView(state,1),{time:1,x:12,y:30,playing:true,ready:true,server:0});
-  assert.deepEqual(PLAY_MODES.together.cpu,[null,null]);assert.deepEqual(PLAY_MODES.opponent.cpu,[null,'opponent']);assert.deepEqual(PLAY_MODES.watch.cpu,['gremlin','fox']);
+  assert.deepEqual(PLAY_MODES.together.cpu,[null,'fox']);assert.deepEqual(PLAY_MODES.local.cpu,[null,null]);assert.deepEqual(PLAY_MODES.opponent.cpu,[null,'opponent']);assert.deepEqual(PLAY_MODES.watch.cpu,['gremlin','fox']);
 });
 await test('A new visible opportunity cannot produce an immediate hit',()=>{
   const a=new CPUPlayer(1,'opponent',{random:()=>0});let first=null;
@@ -62,7 +63,7 @@ await test('Two operators sustain real SPICE rallies and automatically serve aga
 });
 await test('A right-side operator also returns against ordinary manual button input',async()=>{
   // Same ports as the browser: a person supplies only controls + hits.
-  circuit=new TennisCircuit(netlist);let state=await circuit.start(bytes);const right=new CPUPlayer(1,'opponent',{random:seeded(21)});let returned=0,manual=0;
+  circuit=new TennisCircuit(netlist);let state=await circuit.start(bytes);const right=new CPUPlayer(1,PLAY_MODES.together.cpu[1],{random:seeded(21)});let returned=0,manual=0;
   for(let k=0;k<700;k++){
     const a=right.update(operatorView(state,1)),hits=[];
     if(state.can[0]&&(!state.mode||state.x < -28)){hits.push(0);manual++;}

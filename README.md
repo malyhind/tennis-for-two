@@ -10,7 +10,7 @@ Part of the [Imperial School Laboratory](https://games.oopssre.ru/en/lab/) at th
 
 [Play in the browser](https://games.oopssre.ru/en/play/tennis-for-two/) · [Research on GitHub Pages](https://malyhind.github.io/tennis-for-two/app/docs/research.en.html) · [Laboratory materials](https://games.oopssre.ru/en/lab/tennis-for-two.html) · [Research PDF](app/docs/Gremlin_Tennis_Research_0.8.4.en.pdf)
 
-Release **0.8.5** includes the ready looped demo, complete bilingual research and direct links to both research publications. See [release notes](RELEASE.md).
+Release **0.8.6** improves knob and button input. **Me and Fox** now uses an automatic Fox player; **Two players** gives both controllers to people. The looped demo and complete bilingual research are included. See [release notes](RELEASE.md).
 
 ## What is simulated
 
