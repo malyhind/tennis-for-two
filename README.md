@@ -10,7 +10,7 @@ Part of the [Imperial School Laboratory](https://games.oopssre.ru/en/lab/) at th
 
 [Play in the browser](https://games.oopssre.ru/en/play/tennis-for-two/) · [Research on GitHub Pages](https://malyhind.github.io/tennis-for-two/app/docs/research.en.html) · [Laboratory materials](https://games.oopssre.ru/en/lab/tennis-for-two.html) · [Research PDF](app/docs/Gremlin_Tennis_Research_0.8.4.en.pdf)
 
-Release **0.8.7** improves knob and button input. **Me and Opponent** gives both controllers to people; **Me and Fox** uses an automatic Fox player. The looped demo and complete bilingual research are included. See [release notes](RELEASE.md).
+Release **0.8.8** prevents pointer focus on the hit button and knob from scrolling the page. **Me and Opponent** gives both controllers to people; **Me and Fox** uses an automatic Fox player. The looped demo and complete bilingual research are included. See [release notes](RELEASE.md).
 
 ## What is simulated
 

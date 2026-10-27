@@ -1,7 +1,7 @@
 {
-  "version": "0.8.7",
+  "version": "0.8.8",
   "edition": "standalone-source",
-  "revision": 9,
+  "revision": 10,
   "derivedFrom": "ff09fc6816556aa6ae30a92c6fa8f1c6f7738c7a",
   "physicalModelSHA256": {
     "joint-circuit.js": "6946fac642249518bf03ec02124ee031dc0eafa81786f104f564c58967008b0b",
@@ -21,6 +21,7 @@
     "Low closing returns and phase-matched serve boundary for the optional recorder.",
     "Bilingual browser checks for the circuit, controller mechanics and glass optics.",
     "Dependency-free Node local development server.",
-    "Original three modes: two humans, human versus Fox CPU, and Gremlin versus Fox CPU. The instrument reads its UI mode assignments from play-modes.js; simulation and recorded source files are unchanged."
+    "Original three modes: two humans, human versus Fox CPU, and Gremlin versus Fox CPU. The instrument reads its UI mode assignments from play-modes.js; simulation and recorded source files are unchanged.",
+    "Touch and pen controller input do not request programmatic focus; mouse focus preserves scroll position."
   ]
 }

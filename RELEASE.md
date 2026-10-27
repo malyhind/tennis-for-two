@@ -1,59 +1,31 @@
-# Tennis for Two 0.8.7 — Play modes and documentation
+# Tennis for Two 0.8.8 — Prevent controller focus scrolling
 
 ## English
 
-This update restores the intended three play modes and makes their descriptions consistent throughout the project.
+**Tennis for Two 0.8.8** fixes programmatic page scrolling when touching a controller.
 
-### Play modes
-
-- **Me and Opponent:** two people; both controllers accept mouse and keyboard input.
-- **Me and Fox:** a person on the left against the Fox CPU on the right.
-- **Gremlin vs Fox:** two CPU operators.
-
-### Fixes
-
-- Removed the unnecessary fourth mode.
-- Versioned the standalone interface loader so cached files from an earlier release cannot supply the old mode menu.
-- Corrected interface text, instructions and controller tables in both languages.
-- Updated the operator-model JSON, research Markdown, HTML and PDFs to describe the same assignments.
-
-Circuit equations, mechanical parameters, the CPU decision algorithm and recorded demo data are unchanged.
-
-Our code and writing: **MIT**. Third-party licenses and attribution are retained.
-
-### Play and research
+- Touch and pen input no longer request programmatic focus on the hit button or knob, avoiding the resulting page scroll.
+- Mouse input retains focus with `preventScroll: true`.
+- Keyboard focus and the existing pointer, touch and accessibility controls remain available.
+- The three play modes, circuit equations, solver settings, controller mechanics, screen model and recorded demo are unchanged.
 
 [Play on GitHub Pages](https://malyhind.github.io/tennis-for-two/?lang=en) · [Play in the Laboratory](https://games.oopssre.ru/en/play/tennis-for-two/)
 
 [Research on GitHub Pages](https://malyhind.github.io/tennis-for-two/app/docs/research.en.html) · [Research in the Laboratory](https://games.oopssre.ru/en/lab/tennis-for-two.html)
 
-A project of the Imperial School Laboratory.
+Our code and writing: **MIT**. Third-party licenses and attribution are retained.
 
 ## Русский
 
-Исправлено назначение трёх игровых режимов и устранены противоречия между игрой и описаниями проекта.
+**Tennis for Two 0.8.8** исправляет программную прокрутку страницы при касании пульта.
 
-### Режимы
-
-- **«Я и Противник»:** два человека; оба пульта доступны мышью и клавиатурой.
-- **«Я и Лиса»:** человек слева против компьютерной Лисы справа.
-- **«Гремлин против Лисы»:** два компьютерных игрока.
-
-### Исправления
-
-- Убран лишний четвёртый режим.
-- Добавлены версии в загрузку самостоятельного интерфейса: старые файлы из кэша больше не подставляют прежнее меню режимов.
-- Исправлены тексты интерфейса, инструкции и таблицы управления на обоих языках.
-- JSON модели операторов, Markdown исследования, HTML и PDF приведены к одним назначениям игроков.
-
-Уравнения схемы, параметры механики, алгоритм решений CPU и данные демозаписи не изменены.
-
-Наш код и тексты: **MIT**. Лицензии и авторство сторонних компонентов сохранены.
-
-### Игра и исследование
+- При касании кнопки удара или ручки и работе пером больше не запрашивается программный фокус, вызывавший прокрутку страницы.
+- Для мыши фокус сохраняется с параметром `preventScroll: true`.
+- Клавиатурный фокус и существующее управление мышью, касанием и средствами доступности сохранены.
+- Три режима игры, уравнения схемы, настройки решателя, механика пультов, модель экрана и демозапись не изменены.
 
 [Играть на GitHub Pages](https://malyhind.github.io/tennis-for-two/?lang=ru) · [Играть в Лаборатории](https://games.oopssre.ru/play/tennis-for-two/)
 
-[Исследование на GitHub](https://malyhind.github.io/tennis-for-two/app/docs/research.html) · [Исследование в Лаборатории](https://games.oopssre.ru/lab/tennis-for-two.html)
+[Исследование на GitHub Pages](https://malyhind.github.io/tennis-for-two/app/docs/research.html) · [Исследование в Лаборатории](https://games.oopssre.ru/lab/tennis-for-two.html)
 
-Проект Лаборатории Школы Империи.
+Наш код и тексты: **MIT**. Лицензии и авторство сторонних компонентов сохранены.

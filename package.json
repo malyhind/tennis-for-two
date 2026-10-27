@@ -1,6 +1,6 @@
 {
   "name": "tennis-for-two-reconstruction",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "private": true,
   "type": "module",
   "description": "A declared Tennis for Two circuit reconstruction evaluated by ngspice in a browser worker",

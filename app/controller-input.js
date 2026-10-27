@@ -25,7 +25,8 @@ export function bindControllerInput({hit,dial,canPress,canTurn,getValue,setValue
   hit.onpointerdown=event=>{
     // A panel, label or captured pointer outside the key cannot start a stroke.
     if(event.button!==0||press!==null||!canPress()||!inside(hit,event))return;
-    event.preventDefault();event.stopPropagation();hit.focus();
+    event.preventDefault();event.stopPropagation();
+    if(event.pointerType!=='touch'&&event.pointerType!=='pen')hit.focus({preventScroll:true});
     press=event.pointerId;hit.setPointerCapture(press);suppressClickUntil=now()+500;
     hold(`pointer:${press}`,true);
   };
@@ -48,7 +49,8 @@ export function bindControllerInput({hit,dial,canPress,canTurn,getValue,setValue
   };
   dial.onpointerdown=event=>{
     if(event.button!==0||drag||!canTurn()||!inside(dial,event))return;
-    event.preventDefault();event.stopPropagation();dial.focus();
+    event.preventDefault();event.stopPropagation();
+    if(event.pointerType!=='touch'&&event.pointerType!=='pen')dial.focus({preventScroll:true});
     const p=point(dial,event);
     drag={id:event.pointerId,x:event.clientX,y:event.clientY,angle:p.angle,value:getValue(),linear:p.radius<.55};
     dial.setPointerCapture(event.pointerId);
